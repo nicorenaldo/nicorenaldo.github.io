@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Navigate, Route, Routes } from 'react-router-dom';
+import GenericLayout from './components/Layout/GenericLayout';
+import NotFoundPage from './pages/NotFound';
+import AppRoutes from './routes';
+import Logout from './utils/LogOut';
+import { RequireAuth } from './utils/RequireAuth';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route
+        path='/'
+        element={
+          <RequireAuth redirectTo='/login'>
+            <GenericLayout />
+          </RequireAuth>
+        }
+      >
+        {AppRoutes}
+      </Route>
+
+      <Route path='/logout' element={<Logout />} />
+      <Route path='/not-found' element={<NotFoundPage />} />
+      <Route path='*' element={<Navigate to='/not-found' replace />} />
+    </Routes>
   );
 }
 
