@@ -12,9 +12,9 @@ const API_URL = process.env.REACT_APP_API_URL ?? 'http://localhost:8000'
 const baseQuery = fetchBaseQuery({
     baseUrl: API_URL,
     prepareHeaders: (headers, { getState }) => {
-        const { token } = (getState() as RootState).auth;
-        if (token) {
-            headers.set('Authorization', `Bearer ${token}`);
+        const { accessToken } = (getState() as RootState).auth;
+        if (accessToken) {
+            headers.set('Authorization', `Bearer ${accessToken}`);
         }
         return headers;
     },
