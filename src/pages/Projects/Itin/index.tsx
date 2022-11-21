@@ -9,6 +9,9 @@ import ProjectLayout from "../../../components/Layout/ProjectLayout";
 const ItinProject = () => {
     useEffect(() => {
         document.title = 'Itin | Nico Renaldo';
+        return (() => {
+            document.title = 'Nico Renaldo';
+        })
     }, []);
 
     const images = [

@@ -11,6 +11,9 @@ import ProjectLayout from "../../../components/Layout/ProjectLayout";
 const JagawanaProject = () => {
     useEffect(() => {
         document.title = 'Jagawana | Nico Renaldo';
+        return (() => {
+            document.title = 'Nico Renaldo';
+        })
     }, []);
 
     const images = [

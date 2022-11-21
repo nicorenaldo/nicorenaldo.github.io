@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Body, Heading, SubHeading } from "../../components/Common/Text"
 
@@ -10,6 +11,13 @@ type Post = {
 }
 
 const BlogPage = () => {
+    useEffect(() => {
+        document.title = 'Blogs | Nico Renaldo';
+        return (() => {
+            document.title = 'Nico Renaldo';
+        })
+    }, []);
+
     const data: Post[] = [
         {
             date: "10 June 2021",

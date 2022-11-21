@@ -1,11 +1,18 @@
-import { HorizontalDivider } from "../../../components/Common/Divider"
+import { useEffect } from "react"
 import { ImageCaption } from "../../../components/Common/Image"
 import Quote from "../../../components/Common/Quote"
 import { Body, SubHeading, Title } from "../../../components/Common/Text"
 import BlogLayout from "../../../components/Layout/BlogLayout"
 
 const JagawanaML = () => {
-    return <BlogLayout title="AyoLomba!" date="11 June 2021" >
+    useEffect(() => {
+        document.title = 'Jagawana Machine Learning in Depth | Nico Renaldo';
+        return (() => {
+            document.title = 'Nico Renaldo';
+        })
+    }, []);
+
+    return <BlogLayout title="Jagawana — Machine Learning In Depth" date="10 June 2021" >
         <img src="https://imgur.com/kPlY4p6.png" alt="soundwave" />
         <Quote>Jagawana is a Wide Sensor Network System deployed in the forests to prevent Ilegal Logging. By using sensors to pick up voices in the forests, we could monitor what happened in the forest in real-time. We deployed a Machine Learning Model to process the sounds taken by the sensor, then the model will identify the sounds into various categories, such as chainsaws, trucks, gunshot, and burning sounds. We will be using Android App to monitor and notify the user if suspicious events were happening in the forest, the user could also be able to hear the sound itself to ensure the results are correct.</Quote>
 

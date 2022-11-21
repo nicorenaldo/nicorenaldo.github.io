@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import Carousel from "../../../components/Common/Carousel";
 import { HorizontalDivider } from "../../../components/Common/Divider";
-import Iframe from "../../../components/Common/Iframe";
 import Quote from "../../../components/Common/Quote";
 import { Body, SubHeading } from "../../../components/Common/Text";
 import ProjectLayout from "../../../components/Layout/ProjectLayout";
@@ -9,6 +8,9 @@ import ProjectLayout from "../../../components/Layout/ProjectLayout";
 const AyoLombaProject = () => {
     useEffect(() => {
         document.title = 'AyoLomba | Nico Renaldo';
+        return (() => {
+            document.title = 'Nico Renaldo';
+        })
     }, []);
 
     const images = [
