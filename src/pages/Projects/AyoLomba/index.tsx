@@ -22,7 +22,7 @@ const AyoLombaProject = () => {
         <SubHeading>Project Brief</SubHeading>
         <Body><span className="font-bold">AyoLomba!</span> is a web platform to accomodate event organizers and students across Indonesia to post and search competitions, scholarships, and webinars with better experience. Members can find the event they want based on their preferences, AyoLomba! also helps out organizers to reach their audience, using sleek UI and many features to help out both parties.</Body>
         <Body>
-            Link to <a className="underline" href="https://ayolomba-id.herokuapp.com/">Project Demo</a>
+            Link to <a className="font-bold underline" href="https://ayolomba-id.herokuapp.com/">Project Demo</a>
         </Body>
         <HorizontalDivider />
         <Body>

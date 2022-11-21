@@ -48,7 +48,7 @@ const AchievementCard = ({ achievement: e }: AchievementCardProps) => {
     return <div>
         <div className="flex justify-between">
             <a href={e.link}>
-                <Title className="font-bold">{e.name}</Title>
+                <Title>{e.name}</Title>
             </a>
             <Body>{e.duration}</Body>
         </div>

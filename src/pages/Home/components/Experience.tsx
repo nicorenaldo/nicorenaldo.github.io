@@ -75,7 +75,7 @@ type ExperienceCardProps = {
 const ExperienceCard = ({ experience: e }: ExperienceCardProps) => {
     return <div>
         <div className="flex justify-between">
-            <Title className="font-bold">{e.name}, <span className="font-light">{e.title}</span></Title>
+            <Title>{e.name}, <span className="font-light">{e.title}</span></Title>
             <Body className="text-sm">{e.duration}</Body>
         </div>
         <div className="flex flex-col mt-1">

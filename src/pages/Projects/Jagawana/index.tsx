@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import Carousel from "../../../components/Common/Carousel";
 import { HorizontalDivider } from "../../../components/Common/Divider";
 import Iframe from "../../../components/Common/Iframe";
@@ -45,11 +46,11 @@ const JagawanaProject = () => {
         <Body>
             I made a medium stories explaining the project in details. The github repo link can be seen on the About Jagawana stories.
         </Body>
-        <div>
-            <li><a href="https://nicorenaldo.medium.com/detecting-chainsaws-in-forest-with-machine-learning-jagawana-989fd345784">About Jagawana</a></li>
-            <li><a href="https://nicorenaldo.medium.com/jagawana-machine-learning-in-depth-6ea66a45d6b2">ML in Depth</a></li>
-            <li><a href="https://nicorenaldo.medium.com/jagawana-internet-of-things-511d63e48349">IoT in Depth</a></li>
-        </div>
+        <ul className="pl-8 list-disc">
+            <li><Link to="/blogs/jagawana-overview">About Jagawana</Link></li>
+            <li><Link to="/blogs/jagawana-machine-learning">ML in Depth</Link></li>
+            <li><Link to="/blogs/jagawana-iot">IoT in Depth</Link></li>
+        </ul>
     </ProjectLayout>
 }
 

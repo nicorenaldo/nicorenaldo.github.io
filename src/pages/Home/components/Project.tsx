@@ -56,7 +56,7 @@ const ProjectCard = ({ project: e }: ProjectCardProps) => {
         </div>
         <div className="basis-2/4 md:basis-3/4">
             <Link to={`/projects/${e.slug}`} >
-                <Title className="font-bold group flex gap-4 items-center">{e.name}
+                <Title className="group flex gap-4 items-center">{e.name}
                     <ArrowRightIcon className="h-4 group-hover:translate-x-2 transition-all" /></Title>
             </Link>
             <Body>{e.description}</Body>

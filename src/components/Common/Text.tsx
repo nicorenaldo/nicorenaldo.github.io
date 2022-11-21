@@ -7,13 +7,14 @@ export const Heading = tw.h2<any>`
 `;
 
 export const SubHeading = tw.h3<any>`
+    mt-8
     font-bold
     lg:text-2xl
     text-xl
 `;
 
 export const Title = tw.h4<any>`
-    font-light
+    font-bold
     text-lg
 `;
 

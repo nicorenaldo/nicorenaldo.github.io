@@ -64,7 +64,7 @@ const BlogCard = ({ post }: BlogCardProps) => {
     return <div className="flex pt-12 justify-between gap-12">
         <div>
             <Body>{post.date}</Body>
-            <Link to={"/projects/" + post.slug}>
+            <Link to={"/blogs/" + post.slug}>
                 <SubHeading className="mt-4">{post.title}</SubHeading>
             </Link>
             <Body>{post.description}</Body>
