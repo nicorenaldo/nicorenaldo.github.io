@@ -11,11 +11,8 @@ const Navbar = () => {
   return (
     <>
       <div className="hidden md:flex p-8 gap-4">
-        <Link to="/#asd">Home</Link>
-        <Link to="/#asd">About</Link>
-        <Link to="/#asd">Experience</Link>
-        <Link to="/#asd">Projects</Link>
-        <Link to="/#asd">Blogs</Link>
+        <Link to="/">Home</Link>
+        <Link to="/blogs">Blogs</Link>
       </div>
       <div className="block md:hidden m-4">
         <div className="z-0 w-full text-end py-2">
@@ -26,11 +23,8 @@ const Navbar = () => {
         {openMenu && (
           <ClickAwayListener onClickAway={() => setOpenMenu(false)}>
             <div className="bg-neutral-50 shadow w-full flex flex-col gap-2 text-end absolute right-0 p-4">
-              <Link className="" to="/#asd">Home</Link>
-              <Link to="/#asd">About</Link>
-              <Link to="/#asd">Experience</Link>
-              <Link to="/#asd">Projects</Link>
-              <Link to="/#asd">Blogs</Link>
+              <Link to="/">Home</Link>
+              <Link to="/blogs">Blogs</Link>
             </div>
           </ClickAwayListener>
         )}

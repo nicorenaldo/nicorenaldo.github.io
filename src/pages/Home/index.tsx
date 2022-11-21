@@ -1,22 +1,18 @@
-import { PointRightIcon } from "../../components/Common/Icon";
-import { Heading, Title } from "../../components/Common/Text";
+import AboutMe from "./components/AboutMe";
+import Achievement from "./components/Achievement";
+import Banner from "./components/Banner";
+import ExperienceSection from "./components/Experience";
+import Project from "./components/Project";
 
 const HomePage = () => {
   return (
-    <div className="flex flex-col">
-      <div className="flex flex-col gap-12 py-12 px-8 lg:pl-24 xl:pr-96">
-        <Heading className="">Hello!</Heading>
-        <Heading>
-          I'm <span className="font-bold">Nico Renaldo</span>, a software
-          engineer focused on building creative solutions through technology
-        </Heading>
-        <div className="flex gap-2 flex-wrap">
-          <Title>Get in touch</Title>
-          <PointRightIcon className="w-auto h-7" />
-          <Title className="px-2 lg:mx-2 transition-all shadow-[inset_0px_-3px_0px_0px_#007bff] hover:shadow-[inset_0px_-30px_0px_0px_#007bff] hover:text-white cursor-pointer duration-300">
-            <a href="mailto:nicorenald@gmail.com">nicorenald@gmail.com</a>
-          </Title>
-        </div>
+    <div className="flex flex-col px-8 xl:pl-24">
+      <Banner />
+      <div className="flex flex-col gap-24 xl:gap-32 md:mr-16 xl:mr-32">
+        <AboutMe />
+        <ExperienceSection />
+        <Achievement />
+        <Project />
       </div>
     </div>
   );
