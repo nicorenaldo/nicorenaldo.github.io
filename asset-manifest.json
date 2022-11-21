@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5df514d5.css",
-    "main.js": "/static/js/main.6ad34354.js",
+    "main.css": "/static/css/main.d31ab8c1.css",
+    "main.js": "/static/js/main.bd380e3d.js",
     "static/media/Apercu-Italic.svg": "/static/media/Apercu-Italic.d30a32ca42f0db424a8f.svg",
     "static/media/Apercu-LightItalic.svg": "/static/media/Apercu-LightItalic.6f14704dc9d0971f3c83.svg",
     "static/media/Apercu-BoldItalic.svg": "/static/media/Apercu-BoldItalic.da296c2a6a382b1253aa.svg",
@@ -43,11 +43,11 @@
     "static/media/Apercu-Bold.woff2": "/static/media/Apercu-Bold.e2eb70b384a9c39bef4b.woff2",
     "static/media/Apercu-Light.woff2": "/static/media/Apercu-Light.2a0d58e904ad6f326f94.woff2",
     "index.html": "/index.html",
-    "main.5df514d5.css.map": "/static/css/main.5df514d5.css.map",
-    "main.6ad34354.js.map": "/static/js/main.6ad34354.js.map"
+    "main.d31ab8c1.css.map": "/static/css/main.d31ab8c1.css.map",
+    "main.bd380e3d.js.map": "/static/js/main.bd380e3d.js.map"
   },
   "entrypoints": [
-    "static/css/main.5df514d5.css",
-    "static/js/main.6ad34354.js"
+    "static/css/main.d31ab8c1.css",
+    "static/js/main.bd380e3d.js"
   ]
 }
