@@ -9,7 +9,7 @@ import ProjectLayout from "../../../components/Layout/ProjectLayout";
 
 const JagawanaProject = () => {
     useEffect(() => {
-        document.title = 'Jagawana | ' + document.title;
+        document.title = 'Jagawana | Nico Renaldo';
     }, []);
 
     const images = [
