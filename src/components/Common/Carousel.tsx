@@ -5,9 +5,10 @@ import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 type CarouselProps = {
     images: string[]
+    cover?: boolean
 }
 
-const Carousel = ({ images }: CarouselProps) => {
+const Carousel = ({ images, cover }: CarouselProps) => {
     const [index, setIndex] = useState(0)
 
     const handleClickLeft = () => {
@@ -30,7 +31,7 @@ const Carousel = ({ images }: CarouselProps) => {
         <div className={`flex absolute overflow-visible transition-all -translate-x-[100%] duration-300`} style={
             { transform: `translate(-${100 * index}%,0)` }
         }>
-            {images.map((img) => <img src={img} alt="img" className="aspect-video object-contain" />)}
+            {images.map((img) => <img src={img} alt="img" className={`aspect-video ${cover ? 'object-cover object-top' : 'object-contain'}`} />)}
         </div>
         <div className='flex items-center justify-between w-full h-full px-2 absolute'>
             <button onClick={handleClickLeft} type="button" className='rounded-full bg-neutral-600 bg-opacity-20'>

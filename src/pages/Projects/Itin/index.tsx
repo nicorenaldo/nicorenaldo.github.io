@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import Carousel from "../../../components/Common/Carousel";
 import { HorizontalDivider } from "../../../components/Common/Divider";
 import Iframe from "../../../components/Common/Iframe";
-import { ImageCaption } from "../../../components/Common/Image";
 import Quote from "../../../components/Common/Quote";
 import { Body, SubHeading } from "../../../components/Common/Text";
 import ProjectLayout from "../../../components/Layout/ProjectLayout";
