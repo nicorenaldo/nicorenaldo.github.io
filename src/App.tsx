@@ -1,27 +1,17 @@
-import { Navigate, Route, Routes } from 'react-router-dom';
-import GenericLayout from './components/Layout/GenericLayout';
-import NotFoundPage from './pages/NotFound';
-import AppRoutes from './routes';
-import Logout from './utils/LogOut';
-import { RequireAuth } from './utils/RequireAuth';
+import { Navigate, Route, Routes } from "react-router-dom";
+import GenericLayout from "./components/Layout/GenericLayout";
+import HomePage from "./pages/Home";
+import NotFoundPage from "./pages/NotFound";
 
 function App() {
   return (
     <Routes>
-      <Route
-        path='/'
-        element={
-          <RequireAuth redirectTo='/login'>
-            <GenericLayout />
-          </RequireAuth>
-        }
-      >
-        {AppRoutes}
+      <Route path="/" element={<GenericLayout />}>
+        <Route index element={<HomePage />} />
       </Route>
 
-      <Route path='/logout' element={<Logout />} />
-      <Route path='/not-found' element={<NotFoundPage />} />
-      <Route path='*' element={<Navigate to='/not-found' replace />} />
+      <Route path="/not-found" element={<NotFoundPage />} />
+      <Route path="*" element={<Navigate to="/not-found" replace />} />
     </Routes>
   );
 }
