@@ -50,7 +50,7 @@ const AchievementCard = ({ achievement: e }: AchievementCardProps) => {
             <a href={e.link}>
                 <Body className="font-bold">{e.name}</Body>
             </a>
-            <Body>{e.duration}</Body>
+            <Body className="text-sm">{e.duration}</Body>
         </div>
         <Body>{e.organizer}</Body>
     </div>
