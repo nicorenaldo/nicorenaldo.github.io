@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRightIcon } from "../../../components/Common/Icon";
-import { Body } from "../../../components/Common/Text"
+import { Body, Title } from "../../../components/Common/Text"
 import SectionLayout from "../../../components/Layout/SectionLayout"
 
 type Project = {
@@ -36,7 +36,7 @@ const ProjectSection = () => {
     return <SectionLayout title="My Project">
         <div className="flex flex-col gap-10">
             {
-                data.map((e) => <ProjectCard project={e} />)
+                data.map((e) => <ProjectCard key={e.name} project={e} />)
             }
 
         </div>
@@ -56,10 +56,10 @@ const ProjectCard = ({ project: e }: ProjectCardProps) => {
         </div>
         <div className="basis-2/4 md:basis-3/4">
             <Link to={`/projects/${e.slug}`} >
-                <Body className="font-bold group flex gap-4 items-center">{e.name}
-                    <ArrowRightIcon className="h-4 group-hover:translate-x-2 transition-all" /></Body>
+                <Title className="font-bold group flex gap-4 items-center">{e.name}
+                    <ArrowRightIcon className="h-4 group-hover:translate-x-2 transition-all" /></Title>
             </Link>
-            <Body className="text-sm">{e.description}</Body>
+            <Body>{e.description}</Body>
         </div>
     </div>
 }

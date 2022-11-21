@@ -1,4 +1,4 @@
-import { Body } from "../../../components/Common/Text";
+import { Body, Title } from "../../../components/Common/Text";
 import SectionLayout from "../../../components/Layout/SectionLayout";
 
 type Achievement = {
@@ -33,7 +33,7 @@ const AchievementSection = () => {
     return <SectionLayout title="Achievement">
         <div className="flex flex-col gap-10">
             {
-                data.map((e) => <AchievementCard achievement={e} />)
+                data.map((e) => <AchievementCard key={e.name} achievement={e} />)
             }
 
         </div>
@@ -48,9 +48,9 @@ const AchievementCard = ({ achievement: e }: AchievementCardProps) => {
     return <div>
         <div className="flex justify-between">
             <a href={e.link}>
-                <Body className="font-bold">{e.name}</Body>
+                <Title className="font-bold">{e.name}</Title>
             </a>
-            <Body className="text-sm">{e.duration}</Body>
+            <Body>{e.duration}</Body>
         </div>
         <Body>{e.organizer}</Body>
     </div>

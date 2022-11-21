@@ -1,4 +1,4 @@
-import { Body } from "../../../components/Common/Text"
+import { Body, Title } from "../../../components/Common/Text"
 import SectionLayout from "../../../components/Layout/SectionLayout"
 
 type Experience = {
@@ -61,7 +61,7 @@ const ExperienceSection = () => {
     return <SectionLayout title="Experience">
         <div className="flex flex-col gap-10">
             {
-                data.map((e) => <ExperienceCard experience={e} />)
+                data.map((e) => <ExperienceCard key={e.name} experience={e} />)
             }
 
         </div>
@@ -75,11 +75,11 @@ type ExperienceCardProps = {
 const ExperienceCard = ({ experience: e }: ExperienceCardProps) => {
     return <div>
         <div className="flex justify-between">
-            <Body className="font-bold">{e.name}, <span className="font-light">{e.title}</span></Body>
+            <Title className="font-bold">{e.name}, <span className="font-light">{e.title}</span></Title>
             <Body className="text-sm">{e.duration}</Body>
         </div>
         <div className="flex flex-col mt-1">
-            {e.description.map((desc) => <li className="font-light">{desc}</li>)}
+            {e.description.map((desc) => <li key={desc} className="font-light">{desc}</li>)}
         </div>
     </div>
 }
