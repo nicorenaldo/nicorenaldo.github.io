@@ -11,21 +11,11 @@ const Navbar = () => {
   return (
     <>
       <div className="hidden md:flex p-8 gap-4">
-        <p>
-          <Link to="/#asd">Home</Link>
-        </p>
-        <p>
-          <Link to="/#asd">About</Link>
-        </p>
-        <p>
-          <Link to="/#asd">Experience</Link>
-        </p>
-        <p>
-          <Link to="/#asd">Projects</Link>
-        </p>
-        <p>
-          <Link to="/#asd">Blogs</Link>
-        </p>
+        <Link to="/#asd">Home</Link>
+        <Link to="/#asd">About</Link>
+        <Link to="/#asd">Experience</Link>
+        <Link to="/#asd">Projects</Link>
+        <Link to="/#asd">Blogs</Link>
       </div>
       <div className="block md:hidden m-4">
         <div className="z-0 w-full text-end py-2">
