@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Button } from "@mui/material";
 import { useState } from "react";
+import ClickAwayListener from '@mui/material/ClickAwayListener';
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -27,20 +27,22 @@ const Navbar = () => {
           <Link to="/#asd">Blogs</Link>
         </p>
       </div>
-      <div className="relative block md:hidden p-4">
+      <div className="block md:hidden m-4">
         <div className="z-0 w-full text-end py-2">
           <button type="button" onClick={handleClick}>
             <MenuIcon className="text-dark" />
           </button>
         </div>
         {openMenu && (
-          <div className={`transition-all w-full flex flex-col gap-2 text-end`}>
-            <Link to="/#asd">Home</Link>
-            <Link to="/#asd">About</Link>
-            <Link to="/#asd">Experience</Link>
-            <Link to="/#asd">Projects</Link>
-            <Link to="/#asd">Blogs</Link>
-          </div>
+          <ClickAwayListener onClickAway={() => setOpenMenu(false)}>
+            <div className="bg-neutral-50 shadow w-full flex flex-col gap-2 text-end absolute right-0 p-4">
+              <Link className="" to="/#asd">Home</Link>
+              <Link to="/#asd">About</Link>
+              <Link to="/#asd">Experience</Link>
+              <Link to="/#asd">Projects</Link>
+              <Link to="/#asd">Blogs</Link>
+            </div>
+          </ClickAwayListener>
         )}
       </div>
     </>
