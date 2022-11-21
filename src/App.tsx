@@ -2,7 +2,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import GenericLayout from "./components/Layout/GenericLayout";
 import HomePage from "./pages/Home";
 import NotFoundPage from "./pages/NotFound";
-import { ProjectRoute } from "./routes";
+import { BlogRoutes, ProjectRoute } from "./routes";
 
 function App() {
   return (
@@ -15,6 +15,10 @@ function App() {
 
       <Route path="projects" element={<GenericLayout />}>
         {ProjectRoute}
+      </Route>
+
+      <Route path="blogs" element={<GenericLayout />}>
+        {BlogRoutes}
       </Route>
 
     </Routes>

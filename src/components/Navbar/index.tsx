@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="hidden md:flex p-8 gap-4">
+      <div className="hidden md:flex p-8 xl:pl-24 gap-4">
         <Link to="/">Home</Link>
         <Link to="/blogs">Blogs</Link>
       </div>
