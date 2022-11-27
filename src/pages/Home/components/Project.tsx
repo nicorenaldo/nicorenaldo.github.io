@@ -59,19 +59,19 @@ type ProjectCardProps = {
 }
 
 const ProjectCard = ({ project: e }: ProjectCardProps) => {
-    return <div className="flex gap-4 items-center md:items-start">
+    return <div className="flex flex-col md:flex-row gap-4 items-center md:items-start">
         <div className="basis-2/4 md:basis-1/4">
             <Link to={`/projects/${e.slug}`} >
                 <img src={e.thumbnail} alt="thumbnail" className="rounded" />
             </Link>
         </div>
-        <div className="basis-2/4 md:basis-3/4">
+        <div className="w-full md:basis-3/4">
             <Link to={`/projects/${e.slug}`} >
                 <Title className="group flex gap-4 items-center">{e.name}
                     <ArrowRightIcon className="h-4 group-hover:translate-x-2 transition-all" /></Title>
             </Link>
             <Body>{e.description}</Body>
-            <div className="flex mt-2 gap-2">
+            <div className="flex flex-wrap mt-2 gap-2">
                 {e.tags.map((tag) => (
                     <Caption className="border-bluec border py-1 px-2 rounded text-bluec font-medium font-inconsolata">{tag}</Caption>
                 ))}
