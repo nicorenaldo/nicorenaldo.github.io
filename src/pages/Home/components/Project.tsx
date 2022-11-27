@@ -17,7 +17,7 @@ const ProjectSection = () => {
         {
             name: "Dovi",
             description: "Spaced repetition language learning app",
-            thumbnail: 'https://i.imgur.com/JpxQTK0.png',
+            thumbnail: 'https://i.imgur.com/lg1uB4e.png',
             slug: "dovi",
             tags: ["Flutter", "Firebase"],
         },

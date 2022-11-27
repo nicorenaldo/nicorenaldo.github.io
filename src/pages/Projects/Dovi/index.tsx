@@ -17,8 +17,8 @@ const DoviProject = () => {
     const tags = ["Flutter", "Firebase"]
 
     const images = [
-        "https://i.imgur.com/JpxQTK0.png",
-        "https://i.imgur.com/m4KJOiV.png",
+        "https://i.imgur.com/lg1uB4e.png",
+        "https://i.imgur.com/4slObAi.png",
     ]
 
     return <ProjectLayout title="Dovi" date="27 November 2022" >
