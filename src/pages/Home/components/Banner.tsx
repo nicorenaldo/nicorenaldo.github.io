@@ -10,7 +10,7 @@ const Banner = () => {
                 engineer focused on building creative solutions through technology
             </Heading>
             <div className="flex gap-2 flex-wrap">
-                <Title>Get in touch</Title>
+                <Title className="font-normal mr-4">Get in touch</Title>
                 <PointRightIcon className="w-auto h-7" />
                 <Title className="px-2 lg:mx-2 transition-all shadow-[inset_0px_-3px_0px_0px_#007bff] hover:shadow-[inset_0px_-30px_0px_0px_#007bff] hover:text-white cursor-pointer duration-300">
                     <a href="mailto:nicorenald@gmail.com">nicorenald@gmail.com</a>

@@ -11,9 +11,17 @@ type Experience = {
 const ExperienceSection = () => {
     const data: Experience[] = [
         {
+            name: "Sea Ltd.",
+            title: "Junior Engineer",
+            duration: 'Aug 2022 - Present',
+            description: [
+                "On-the-job training  covering the software engineering fundamentals, best coding practices on common tech stacks and tools used in the industry",
+            ]
+        },
+        {
             name: "PT. Hamilton Prima Indonesia",
             title: "Backend Engineer",
-            duration: 'Oct 2021 - Present',
+            duration: 'Oct 2021 - June 2022',
             description: [
                 "Develop and design a backend architecture for property rental application",
                 "Generated unit testing and documentation for the Android teams"
@@ -26,16 +34,6 @@ const ExperienceSection = () => {
             description: [
                 "Co-managed a $10,000 research grant, ensured completion of all project deliverables",
                 "Assembled an IoT model for distinguishing chainsaws sounds by utilizing AI on a cloud server"
-            ]
-        },
-        {
-            name: "Bangkit Academy by Google",
-            title: "Machine Learning Trainee",
-            duration: 'Feb - June 2021',
-            description: [
-                "Developed an illegal logging solution by integrating machine learning and IoT sensors and attained the top 15 final projects from the total of 483 teams",
-                "Performed data preparation, data preprocessing and created a CNN model which can detect chainsaw sounds from Mel Spectrogram data",
-                "Graduated with distinction (top 10% performer) among 3000 participants from 250 universities in Indonesia"
             ]
         },
         {
@@ -74,13 +72,13 @@ type ExperienceCardProps = {
 
 const ExperienceCard = ({ experience: e }: ExperienceCardProps) => {
     return <div>
-        <div className="flex justify-between">
+        <div className="flex flex-col mb-2 md:mb-0 md:flex-row justify-between">
             <Title>{e.name}, <span className="font-light">{e.title}</span></Title>
             <Body className="text-sm">{e.duration}</Body>
         </div>
-        <div className="flex flex-col mt-1">
+        <ul className="flex flex-col mt-1 list-disc ml-4">
             {e.description.map((desc) => <li key={desc} className="font-light">{desc}</li>)}
-        </div>
+        </ul>
     </div>
 }
 

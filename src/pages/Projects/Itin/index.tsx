@@ -3,6 +3,7 @@ import Carousel from "../../../components/Common/Carousel";
 import { HorizontalDivider } from "../../../components/Common/Divider";
 import Iframe from "../../../components/Common/Iframe";
 import Quote from "../../../components/Common/Quote";
+import Tags from "../../../components/Common/Tags";
 import { Body, SubHeading } from "../../../components/Common/Text";
 import ProjectLayout from "../../../components/Layout/ProjectLayout";
 
@@ -13,6 +14,8 @@ const ItinProject = () => {
             document.title = 'Nico Renaldo';
         })
     }, []);
+
+    const tags = ["Django"]
 
     const images = [
         "https://imgur.com/EvnaPOT.png",
@@ -38,6 +41,8 @@ const ItinProject = () => {
 
         <SubHeading>Introduction Video</SubHeading>
         <Iframe src="https://www.youtube.com/embed/QpfyA9de6zk" />
+
+        <Tags tags={tags} />
 
     </ProjectLayout>
 }

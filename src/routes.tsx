@@ -7,6 +7,7 @@ import JagawanaOverview from "./pages/Blogs/2021-05-16-JagawanaOverview";
 import JagawanaIot from "./pages/Blogs/2021-06-05-JagawanaIot";
 import JagawanaML from "./pages/Blogs/2021-06-10-JagawanaML";
 import AyoLombaProject from "./pages/Projects/AyoLomba";
+import DoviProject from "./pages/Projects/Dovi";
 import ItinProject from "./pages/Projects/Itin";
 import JagawanaProject from "./pages/Projects/Jagawana";
 
@@ -20,6 +21,7 @@ export const BlogRoutes = <React.Fragment>
 </React.Fragment>;
 
 export const ProjectRoute = <React.Fragment>
+    <Route path="dovi" element={<DoviProject />} />
     <Route path="jagawana" element={<JagawanaProject />} />
     <Route path="itin" element={<ItinProject />} />
     <Route path="ayolomba" element={<AyoLombaProject />} />

@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Carousel from "../../../components/Common/Carousel";
 import { HorizontalDivider } from "../../../components/Common/Divider";
 import Quote from "../../../components/Common/Quote";
+import Tags from "../../../components/Common/Tags";
 import { Body, SubHeading } from "../../../components/Common/Text";
 import ProjectLayout from "../../../components/Layout/ProjectLayout";
 
@@ -12,6 +13,8 @@ const AyoLombaProject = () => {
             document.title = 'Nico Renaldo';
         })
     }, []);
+
+    const tags = ["Django"]
 
     const images = [
         "https://imgur.com/KUc51Xn.png",
@@ -33,6 +36,8 @@ const AyoLombaProject = () => {
 
         <SubHeading>Photos</SubHeading>
         <Carousel cover={true} images={images} />
+
+        <Tags tags={tags} />
 
     </ProjectLayout>
 }

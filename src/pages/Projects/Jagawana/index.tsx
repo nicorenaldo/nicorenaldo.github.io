@@ -5,6 +5,7 @@ import { HorizontalDivider } from "../../../components/Common/Divider";
 import Iframe from "../../../components/Common/Iframe";
 import { ImageCaption } from "../../../components/Common/Image";
 import Quote from "../../../components/Common/Quote";
+import Tags from "../../../components/Common/Tags";
 import { Body, SubHeading } from "../../../components/Common/Text";
 import ProjectLayout from "../../../components/Layout/ProjectLayout";
 
@@ -15,6 +16,8 @@ const JagawanaProject = () => {
             document.title = 'Nico Renaldo';
         })
     }, []);
+
+    const tags = ["Audio Signal Processing", "Tensorflow", "IoT", "Google Cloud"]
 
     const images = [
         "https://imgur.com/u7JWAoM.png",
@@ -54,6 +57,9 @@ const JagawanaProject = () => {
             <li><Link to="/blogs/jagawana-machine-learning">ML in Depth</Link></li>
             <li><Link to="/blogs/jagawana-iot">IoT in Depth</Link></li>
         </ul>
+
+        <Tags tags={tags} />
+
     </ProjectLayout>
 }
 

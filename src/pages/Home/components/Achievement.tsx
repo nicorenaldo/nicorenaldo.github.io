@@ -11,6 +11,12 @@ type Achievement = {
 const AchievementSection = () => {
     const data: Achievement[] = [
         {
+            name: "Top 15 Capstone Project",
+            organizer: "Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka",
+            duration: '2021',
+            link: "https://grow.google/intl/id_id/bangkit/",
+        },
+        {
             name: "1st Runner Up Winner at Hackathon x Business Case Competition",
             organizer: "180 Degree Consulting UGM",
             duration: '2021',
