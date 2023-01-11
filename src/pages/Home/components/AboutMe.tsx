@@ -1,4 +1,4 @@
-import { Body, Title } from "../../../components/Common/Text"
+import { Title } from "../../../components/Common/Text"
 import SectionLayout from "../../../components/Layout/SectionLayout"
 
 const AboutMe = () => {

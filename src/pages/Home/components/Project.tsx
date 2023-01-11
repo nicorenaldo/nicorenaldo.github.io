@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRightIcon } from "../../../components/Common/Icon";
-import { Body, Caption, Title } from "../../../components/Common/Text"
-import SectionLayout from "../../../components/Layout/SectionLayout"
+import { Body, Caption, Title } from "../../../components/Common/Text";
+import SectionLayout from "../../../components/Layout/SectionLayout";
 
 type Project = {
     name: string;
@@ -47,7 +47,7 @@ const ProjectSection = () => {
     return <SectionLayout title="My Project">
         <div className="flex flex-col gap-10">
             {
-                data.map((e) => <ProjectCard key={e.name} project={e} />)
+                data.map((e, index) => <ProjectCard key={index} project={e} />)
             }
 
         </div>
@@ -73,7 +73,7 @@ const ProjectCard = ({ project: e }: ProjectCardProps) => {
             <Body>{e.description}</Body>
             <div className="flex flex-wrap mt-2 gap-2">
                 {e.tags.map((tag) => (
-                    <Caption className="border-bluec border py-1 px-2 rounded text-bluec font-medium font-inconsolata">{tag}</Caption>
+                    <Caption key={tag} className="border-bluec border py-1 px-2 rounded text-bluec font-medium font-inconsolata">{tag}</Caption>
                 ))}
             </div>
         </div>

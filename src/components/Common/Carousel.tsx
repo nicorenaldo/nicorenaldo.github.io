@@ -1,7 +1,6 @@
-import 'flowbite';
-import { useState } from 'react';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import { useState } from 'react';
 
 type CarouselProps = {
     images: string[]
