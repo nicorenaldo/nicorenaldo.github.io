@@ -1,5 +1,5 @@
-import { Body, Title } from "../../../components/Common/Text"
-import SectionLayout from "../../../components/Layout/SectionLayout"
+import { Body, Title } from "../../../components/Common/Text";
+import SectionLayout from "../../../components/Layout/SectionLayout";
 
 type Experience = {
     name: string;

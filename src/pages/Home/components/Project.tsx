@@ -65,12 +65,15 @@ const ProjectCard = ({ project: e }: ProjectCardProps) => {
                 <img src={e.thumbnail} alt="thumbnail" className="rounded" />
             </Link>
         </div>
+
         <div className="w-full md:basis-3/4">
             <Link to={`/projects/${e.slug}`} >
                 <Title className="group flex gap-4 items-center">{e.name}
                     <ArrowRightIcon className="h-4 group-hover:translate-x-2 transition-all" /></Title>
             </Link>
+        
             <Body>{e.description}</Body>
+        
             <div className="flex flex-wrap mt-2 gap-2">
                 {e.tags.map((tag) => (
                     <Caption key={tag} className="border-bluec border py-1 px-2 rounded text-bluec font-medium font-inconsolata">{tag}</Caption>

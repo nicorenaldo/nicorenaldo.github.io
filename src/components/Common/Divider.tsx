@@ -3,5 +3,5 @@ type DividerProps = {
 }
 
 export const HorizontalDivider = ({ className }: DividerProps) => {
-    return <hr className={`my-4` + className} />
+    return <hr className={`my-4 ${className}`} />
 }

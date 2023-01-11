@@ -7,9 +7,32 @@ module.exports = {
         dark: '#444452',
         bluec: '#007bff',
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            img:{
+              'margin-top':0,
+              'margin-bottom':0,
+            },
+            a: {
+              'text-decoration': 'none',
+            },
+            ol:{
+              'margin-top':0,
+              'margin-bottom':0,
+            },
+            li:{
+              'margin-top':0,
+              'margin-bottom':0,
+            },
+          },
+        },
+      },
     },
   },
-  plugins: [require('daisyui')],
+
+  plugins: [require('@tailwindcss/typography'), require('daisyui')],
+
   daisyui: {
     themes: [
       {

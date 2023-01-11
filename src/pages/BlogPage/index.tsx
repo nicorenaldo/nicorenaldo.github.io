@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Body, Heading, SubHeading } from "../../components/Common/Text"
+import { Body, Heading, SubHeading } from "../../components/Common/Text";
 
 type Post = {
     date: string;
@@ -58,7 +58,7 @@ const BlogPage = () => {
         <Heading>Blogs</Heading>
         <div className="flex flex-col gap-12 divide-y">
             {data.map((e) => {
-                return <BlogCard post={e} />
+                return <BlogCard key={e.title} post={e} />
             })}
         </div>
     </div>

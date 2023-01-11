@@ -19,7 +19,7 @@ const Navbar = () => {
       {/* Mobile  */}
       <div className='block md:hidden m-4 text-end'>
         <label htmlFor='navbar-drawer' className='drawer-button'>
-            <MenuIcon className='text-dark' />
+            <MenuIcon className='' />
         </label>
       </div>
     </>

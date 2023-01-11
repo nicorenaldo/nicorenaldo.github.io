@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const useThemeDaisy = () => {
   const [currentTheme, setCurrentTheme] = useState('');
@@ -7,6 +7,10 @@ const useThemeDaisy = () => {
   function toggleChangeTheme() {
     setCurrentTheme(localStorage.getItem('theme') ?? '');
   }
+
+  useEffect(()=>{
+    setCurrentTheme(localStorage.getItem('theme') ?? '');
+  },[])
 
   return { currentTheme, toggleChangeTheme };
 };
