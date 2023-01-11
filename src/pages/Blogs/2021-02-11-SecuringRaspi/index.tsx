@@ -29,8 +29,8 @@ const SecuringRaspi = () => {
 
 
         <Title>Usage</Title>
-        <Body>For connecting your raspi (as client) to the VPN server, what you need is the .ovpn files generated from the server itself. For this experiment I was using a private VPN server so I can't share the file for this tutorial, but you can find some public VPN server from <a href="https://www.freeopenvpn.org/en/" className="font-bold underline">this website</a> or <a href="https://www.vpngate.net/en/" className="font-bold underline">here</a>.</Body>
-        <Body>After you got your .ovpn files (on your pc / laptop), you need to transfer the file either by using <a href="https://pimylifeup.com/raspberry-pi-ftp/" className="font-bold underline">FTP over FileZilla</a> or you can download it directly using your raspi. After that you need to move the .ovpn files to the address :</Body>
+        <Body>For connecting your raspi (as client) to the VPN server, what you need is the .ovpn files generated from the server itself. For this experiment I was using a private VPN server so I can't share the file for this tutorial, but you can find some public VPN server from <a href="https://www.freeopenvpn.org/en/" className="font-bold underline" aria-label="OpenVPN">this website</a> or <a href="https://www.vpngate.net/en/" className="font-bold underline" aria-label="VPN Gate">here</a>.</Body>
+        <Body>After you got your .ovpn files (on your pc / laptop), you need to transfer the file either by using <a href="https://pimylifeup.com/raspberry-pi-ftp/" className="font-bold underline" aria-label="FileZilla">FTP over FileZilla</a> or you can download it directly using your raspi. After that you need to move the .ovpn files to the address :</Body>
         <Body className="font-bold">sudo openvpn example.ovpn</Body>
 
         <Body>After you got the file, all you need to do is run the openvpn program, also change the file name to the matching file's name :</Body>

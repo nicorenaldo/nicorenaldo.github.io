@@ -4,8 +4,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        dark: '#444452',
-        bluec: '#007bff',
       },
       typography: {
         DEFAULT: {
@@ -44,7 +42,7 @@ module.exports = {
       {
         dark: {
           ...require('daisyui/src/colors/themes')['[data-theme=dark]'],
-          primary: '#007bff',
+          primary: '#3B9AFF',
         },
       },
     ],

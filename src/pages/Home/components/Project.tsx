@@ -62,13 +62,13 @@ type ProjectCardProps = {
 const ProjectCard = ({ project: e }: ProjectCardProps) => {
     return <div className="flex flex-col md:flex-row gap-4 items-center md:items-start">
         <div className="basis-2/4 md:basis-1/4">
-            <Link to={`/projects/${e.slug}`} >
+            <Link to={`/projects/${e.slug}`} aria-label={`Navigate to project ${e.name}`}>
                 <Image src={e.thumbnail} alt="thumbnail" className="rounded" />
             </Link>
         </div>
 
         <div className="w-full md:basis-3/4">
-            <Link to={`/projects/${e.slug}`} >
+            <Link to={`/projects/${e.slug}`} aria-label={`Navigate to project ${e.name}`}>
                 <Title className="group flex gap-4 items-center">{e.name}
                     <ArrowRightIcon className="h-4 group-hover:translate-x-2 transition-all" /></Title>
             </Link>
@@ -77,7 +77,7 @@ const ProjectCard = ({ project: e }: ProjectCardProps) => {
         
             <div className="flex flex-wrap mt-2 gap-2">
                 {e.tags.map((tag) => (
-                    <Caption key={tag} className="border-bluec border py-1 px-2 rounded text-bluec font-medium font-inconsolata">{tag}</Caption>
+                    <Caption key={tag} className="border-primary border py-1 px-2 rounded text-primary font-medium font-inconsolata">{tag}</Caption>
                 ))}
             </div>
         </div>

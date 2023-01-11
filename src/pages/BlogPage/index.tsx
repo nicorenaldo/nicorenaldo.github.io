@@ -81,7 +81,7 @@ const BlogCard = ({ post }: BlogCardProps) => {
     <div className='flex flex-col-reverse lg:flex-row pt-4 lg:pt-12 justify-between lg:gap-12'>
       <div>
         <Body>{post.date}</Body>
-        <Link to={'/blogs/' + post.slug}>
+        <Link to={'/blogs/' + post.slug} aria-label={`Navigate to post ${post.title}`}>
           <SubHeading className='mt-4'>{post.title}</SubHeading>
         </Link>
         <Body>{post.description}</Body>

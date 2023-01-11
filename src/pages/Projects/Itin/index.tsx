@@ -29,7 +29,7 @@ const ItinProject = () => {
         <SubHeading>Project Brief</SubHeading>
         <Body>Itin is a trip planning web application to easily make, share, and browse itineraries. Users could make their own itinerary, share it with friends and public, and take inspiration from others.</Body>
         <Body>
-            Link to <a className="underline" href="https://itin.netlify.app/">Project Demo</a>
+            Link to <a className="underline" href="https://itin.netlify.app/" aria-label="Itin Preview Website">Project Demo</a>
         </Body>
         <HorizontalDivider />
         <Body>

@@ -53,9 +53,9 @@ const JagawanaProject = () => {
             I made a medium stories explaining the project in details. The github repo link can be seen on the About Jagawana stories.
         </Body>
         <ul className="pl-8 list-disc">
-            <li><Link to="/blogs/jagawana-overview">About Jagawana</Link></li>
-            <li><Link to="/blogs/jagawana-machine-learning">ML in Depth</Link></li>
-            <li><Link to="/blogs/jagawana-iot">IoT in Depth</Link></li>
+            <li><Link to="/blogs/jagawana-overview" aria-label="Navigate to Jagawana overview">About Jagawana</Link></li>
+            <li><Link to="/blogs/jagawana-machine-learning" aria-label="Navigate to Jagawana ML in depth">ML in Depth</Link></li>
+            <li><Link to="/blogs/jagawana-iot" aria-label="Navigate to Jagawana IoT in depth">IoT in Depth</Link></li>
         </ul>
 
         <Tags tags={tags} />

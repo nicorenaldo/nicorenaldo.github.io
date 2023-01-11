@@ -22,7 +22,7 @@ const HeadlessRaspi = () => {
 
         <ol className="pl-8 list-decimal">
             <li>Insert a microSD card / reader into your computer.</li>
-            <li>Download and install the <a href="https://www.raspberrypi.org/downloads/" className="font-bold underline">official Raspberry Pi Imager</a> through the official website.</li>
+            <li>Download and install the <a href="https://www.raspberrypi.org/downloads/" className="font-bold underline" aria-label="Raspberry Pi Official">official Raspberry Pi Imager</a> through the official website.</li>
             <li>Click Choose OS and select Raspbian from the OS menu (there are other choices, we are going to use the latest Raspbian OS). The process could take a while since you need to download the OS image too (around 1 hour for me).</li>
         </ol>
         <ImageCaption src="https://i.imgur.com/7DmKhLL.jpg" alt="" caption="Initial Main Menu of the Imager" />

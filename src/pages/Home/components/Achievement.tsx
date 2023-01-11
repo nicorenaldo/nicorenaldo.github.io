@@ -53,7 +53,7 @@ type AchievementCardProps = {
 const AchievementCard = ({ achievement: e }: AchievementCardProps) => {
     return <div>
         <div className="flex justify-between">
-            <a href={e.link}>
+            <a href={e.link} aria-label={`Achievement ${e.name}`}>
                 <Title>{e.name}</Title>
             </a>
             <Body>{e.duration}</Body>

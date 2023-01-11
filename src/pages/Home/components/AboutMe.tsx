@@ -13,7 +13,7 @@ const AboutMe = () => {
         {/* TODO: Insert my extra-curricular activities / hobby */}
         <br />
         <Title className="w-fit px-2 lg:mx-2 transition-all shadow-[inset_0px_-3px_0px_0px_#007bff] hover:shadow-[inset_0px_-30px_0px_0px_#007bff] hover:text-white cursor-pointer duration-300">
-            <a href="/nicorenaldo_resume.pdf">View My Resume (PDF)</a>
+            <a href="/nicorenaldo_resume.pdf" aria-label="Nico's Resume">View My Resume (PDF)</a>
         </Title>
     </SectionLayout>
 }
