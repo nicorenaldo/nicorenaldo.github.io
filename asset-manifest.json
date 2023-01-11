@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.741a3268.css",
-    "main.js": "/static/js/main.5e7ecd18.js",
-    "static/media/Apercu-Italic.svg": "/static/media/Apercu-Italic.d30a32ca42f0db424a8f.svg",
-    "static/media/Apercu-LightItalic.svg": "/static/media/Apercu-LightItalic.6f14704dc9d0971f3c83.svg",
-    "static/media/Apercu-BoldItalic.svg": "/static/media/Apercu-BoldItalic.da296c2a6a382b1253aa.svg",
-    "static/media/Apercu-Medium.svg": "/static/media/Apercu-Medium.e013f496eee3bf496d9c.svg",
-    "static/media/Apercu-Regular.svg": "/static/media/Apercu-Regular.507ea4a175b5bc934a0b.svg",
-    "static/media/Apercu-Bold.svg": "/static/media/Apercu-Bold.aa4b8833848adef2ba73.svg",
-    "static/media/Apercu-MediumItalic.svg": "/static/media/Apercu-MediumItalic.33cde928ec9ae2481135.svg",
-    "static/media/Apercu-Light.svg": "/static/media/Apercu-Light.43c43444f6b7ea03b5be.svg",
+    "main.css": "/static/css/main.e7af47b0.css",
+    "main.js": "/static/js/main.cba2f3b8.js",
+    "static/media/Apercu-Italic.svg": "/static/media/Apercu-Italic.062d5370bad2ba1aed3e.svg",
+    "static/media/Apercu-LightItalic.svg": "/static/media/Apercu-LightItalic.515fa9a66c0823cdf166.svg",
+    "static/media/Apercu-BoldItalic.svg": "/static/media/Apercu-BoldItalic.121201a51cd26c34b3bf.svg",
+    "static/media/Apercu-Medium.svg": "/static/media/Apercu-Medium.e88654454c626b784668.svg",
+    "static/media/Apercu-Regular.svg": "/static/media/Apercu-Regular.588f73fade0c7e517497.svg",
+    "static/media/Apercu-Bold.svg": "/static/media/Apercu-Bold.4598ccf83f88cef4e75b.svg",
+    "static/media/Apercu-MediumItalic.svg": "/static/media/Apercu-MediumItalic.caa6a9986ca428de873e.svg",
+    "static/media/Apercu-Light.svg": "/static/media/Apercu-Light.b1c4620132949acd7158.svg",
     "static/media/Apercu-Italic.eot": "/static/media/Apercu-Italic.1c2d773ba6a670f22cec.eot",
     "static/media/Apercu-Italic.ttf": "/static/media/Apercu-Italic.7348db97053a8046655d.ttf",
     "static/media/Apercu-LightItalic.eot": "/static/media/Apercu-LightItalic.990710eb9f0008611162.eot",
@@ -43,11 +43,11 @@
     "static/media/Apercu-Bold.woff2": "/static/media/Apercu-Bold.e2eb70b384a9c39bef4b.woff2",
     "static/media/Apercu-Light.woff2": "/static/media/Apercu-Light.2a0d58e904ad6f326f94.woff2",
     "index.html": "/index.html",
-    "main.741a3268.css.map": "/static/css/main.741a3268.css.map",
-    "main.5e7ecd18.js.map": "/static/js/main.5e7ecd18.js.map"
+    "main.e7af47b0.css.map": "/static/css/main.e7af47b0.css.map",
+    "main.cba2f3b8.js.map": "/static/js/main.cba2f3b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.741a3268.css",
-    "static/js/main.5e7ecd18.js"
+    "static/css/main.e7af47b0.css",
+    "static/js/main.cba2f3b8.js"
   ]
 }
