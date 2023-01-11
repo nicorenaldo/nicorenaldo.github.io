@@ -1,5 +1,5 @@
-import React from "react"
-import { Body, Heading } from "../Common/Text"
+import React from "react";
+import { Body, Heading } from "../Common/Text";
 
 type BlogLayoutProps = {
     title: string;
