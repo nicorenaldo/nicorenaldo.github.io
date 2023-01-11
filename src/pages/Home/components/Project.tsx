@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRightIcon } from "../../../components/Common/Icon";
+import { Image } from "../../../components/Common/Image";
 import { Body, Caption, Title } from "../../../components/Common/Text";
 import SectionLayout from "../../../components/Layout/SectionLayout";
 
@@ -62,7 +63,7 @@ const ProjectCard = ({ project: e }: ProjectCardProps) => {
     return <div className="flex flex-col md:flex-row gap-4 items-center md:items-start">
         <div className="basis-2/4 md:basis-1/4">
             <Link to={`/projects/${e.slug}`} >
-                <img src={e.thumbnail} alt="thumbnail" className="rounded" />
+                <Image src={e.thumbnail} alt="thumbnail" className="rounded" />
             </Link>
         </div>
 

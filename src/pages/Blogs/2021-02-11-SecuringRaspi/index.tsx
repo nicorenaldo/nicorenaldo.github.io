@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import { ImageCaption } from "../../../components/Common/Image"
-import { Body, SubHeading, Title } from "../../../components/Common/Text"
-import BlogLayout from "../../../components/Layout/BlogLayout"
+import { Image, ImageCaption } from "../../../components/Common/Image";
+import { Body, SubHeading, Title } from "../../../components/Common/Text";
+import BlogLayout from "../../../components/Layout/BlogLayout";
 
 const SecuringRaspi = () => {
     useEffect(() => {
@@ -12,7 +12,7 @@ const SecuringRaspi = () => {
     }, []);
 
     return <BlogLayout title="Securing Raspberry Pi Connection with OpenVPN" date="11 February 2021" >
-        <img src="https://imgur.com/05alk7G.jpg" alt="" />
+        <Image src="https://imgur.com/05alk7G.jpg" alt="" />
 
         <Body>When you are making IoT project using Raspi, you may found yourself ended up using public WiFi for Raspi's internet connection. While this may grant you internet for your raspi, this connection may not be as secure as you think, amateur hackers can see everything you do online with simple tools like Packet Sniffers. Luckily we can mitigate these threats by setting up a VPN connection on the Raspi.</Body>
         <Body>What a VPN does basically, is creating a safe tunnel to the VPN server. This will make your transferred data harder to sniff, and also grant your PC/Laptop connected to the VPN, a local network connection with the raspi, thus enabling SSH connection to the raspi. I will show you how to give your raspi access to OpenVPN, the entire process would only take 5-15 minutes.</Body>

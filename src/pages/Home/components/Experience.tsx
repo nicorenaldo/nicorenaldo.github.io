@@ -76,7 +76,7 @@ const ExperienceCard = ({ experience: e }: ExperienceCardProps) => {
             <Title>{e.name}, <span className="font-light">{e.title}</span></Title>
             <Body className="text-sm">{e.duration}</Body>
         </div>
-        <ul className="flex flex-col mt-1 list-disc ml-4">
+        <ul className="flex flex-col mt-1 list-disc md:ml-4">
             {e.description.map((desc) => <li key={desc} className="font-light">{desc}</li>)}
         </ul>
     </div>

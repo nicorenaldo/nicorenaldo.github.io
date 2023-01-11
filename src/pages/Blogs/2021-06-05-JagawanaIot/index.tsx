@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { ImageCaption } from "../../../components/Common/Image"
+import { Image, ImageCaption } from "../../../components/Common/Image"
 import Quote from "../../../components/Common/Quote"
 import { Body, SubHeading, Title } from "../../../components/Common/Text"
 import BlogLayout from "../../../components/Layout/BlogLayout"
@@ -13,7 +13,7 @@ const JagawanaIot = () => {
     }, []);
 
     return <BlogLayout title="Jagawana — Internet of Things in Depth" date="5 June 2021" >
-        <img src="https://i.imgur.com/exxj7EQ.png" alt="iot illustration" />
+        <Image src="https://i.imgur.com/exxj7EQ.png" alt="iot illustration" />
         <Quote>Jagawana is a Wide Sensor Network System deployed in the forests to prevent Ilegal Logging. By using sensors to pick up voices in the forests, we could monitor what happened in the forest in real-time. We deployed a Machine Learning Model to process the sounds taken by the sensor, then the model will identify the sounds into various categories, such as chainsaws, trucks, gunshot, and burning sounds. We will be using Android App to monitor and notify the user if suspicious events were happening in the forest, the user could also be able to hear the sound itself to ensure the results are correct.</Quote>
 
         <Body>One of the keys to our project is how we will gather audio from the forest, our solution involves creating a Wide Sensor Network that spans across the forest. This idea is popularly used by many researchers, especially in detecting forest fires using a smoke detector.</Body>

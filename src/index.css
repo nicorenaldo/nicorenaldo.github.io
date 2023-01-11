@@ -18,3 +18,9 @@ code {
 .font-inconsolata {
   font-family: Inconsolata,monospace;
 }
+
+@layer components {
+  .custom-shadow {
+    box-shadow: rgb(0 0 0 / 20%) 0px 1px 6px 0px;
+  }
+}

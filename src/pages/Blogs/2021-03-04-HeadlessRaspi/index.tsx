@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import { ImageCaption } from "../../../components/Common/Image"
-import { Body, Title } from "../../../components/Common/Text"
-import BlogLayout from "../../../components/Layout/BlogLayout"
+import { Image, ImageCaption } from "../../../components/Common/Image";
+import { Body, Title } from "../../../components/Common/Text";
+import BlogLayout from "../../../components/Layout/BlogLayout";
 
 const HeadlessRaspi = () => {
     useEffect(() => {
@@ -12,7 +12,7 @@ const HeadlessRaspi = () => {
     }, []);
 
     return <BlogLayout title="Headless Raspberry Pi 3 B+ SSH & WiFi Setup" date="4 March 2021" >
-        <img src="https://imgur.com/HlqDlPS.jpg" alt="" />
+        <Image src="https://imgur.com/HlqDlPS.jpg" alt="headless-raspi" />
 
         <Body className="font-bold">This article covers setting up the Raspberry Pi 3 Model B+ for headless SSH access over WiFi using Windows 10.</Body>
 
