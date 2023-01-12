@@ -24,3 +24,11 @@ code {
     box-shadow: rgb(0 0 0 / 20%) 0px 1px 6px 0px;
   }
 }
+
+.grid-cols-tiles {
+  grid-template-columns: repeat(var(--columns),1fr);
+}
+
+.grid-rows-tiles {
+  grid-template-rows: repeat(var(--rows),1fr);
+}

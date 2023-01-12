@@ -8,7 +8,7 @@ const GenericLayout = () => {
     <div className='drawer drawer-end min-h-screen prose max-w-none'>
       <input id='navbar-drawer' type='checkbox' className='drawer-toggle' />
 
-      <div className='drawer-content'>
+      <div className='relative drawer-content'>
         <Navbar />
         <Outlet />
         <Footer />

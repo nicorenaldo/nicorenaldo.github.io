@@ -7,7 +7,7 @@ const Navbar = () => {
     <>
       {/* Desktop  */}
       <div className='hidden md:flex justify-between items-center p-8 xl:pl-24'>
-        <div className='flex md:gap-4'>
+        <div className='flex md:gap-4 z-10'>
           <Link to='/' aria-label='Navigate to home'>Home</Link>
           <Link to='/blogs' aria-label='Navigate to blogs'>Blogs</Link>
         </div>
@@ -17,9 +17,9 @@ const Navbar = () => {
       </div>
 
       {/* Mobile  */}
-      <div className='block md:hidden m-4 text-end'>
-        <label htmlFor='navbar-drawer' className='drawer-button'>
-            <MenuIcon className='' />
+      <div className='block md:hidden m-4 text-end z-10'>
+        <label htmlFor='navbar-drawer' className='drawer-button z-10'>
+            <MenuIcon className='z-10' />
         </label>
       </div>
     </>

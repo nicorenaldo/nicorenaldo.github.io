@@ -1,11 +1,14 @@
+import { selectApp } from '../../app/Redux/appSlice';
+import { useAppSelector } from '../../app/Redux/hooks';
 import useThemeDaisy from '../../utils/useThemeDaisy';
 import { MoonIcon, SunIcon } from '../Common/Icon';
 
 const ThemeToggle = () => {
-  const { currentTheme, toggleChangeTheme } = useThemeDaisy();
+  const { toggleChangeTheme } = useThemeDaisy();
+  const { theme:currentTheme } = useAppSelector(selectApp);
 
   return (
-    <div className='form-control'>
+    <div className='form-control z-10'>
       <label className='cursor-pointer flex gap-2 items-center'>
         <SunIcon />
           <input
