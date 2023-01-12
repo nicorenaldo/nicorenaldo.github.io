@@ -17,7 +17,7 @@ const ProjectSection = () => {
         // TODO: Tambahin Gobi, Project di Shopee ?
         {
             name: "Dovi",
-            description: "Spaced repetition language learning app",
+            description: "A mobile language learning app built with Flutter and Firebase that employs spaced repetition algorithm to improve user learning rate ",
             thumbnail: 'https://i.imgur.com/lg1uB4e.png',
             slug: "dovi",
             tags: ["Flutter", "Firebase"],

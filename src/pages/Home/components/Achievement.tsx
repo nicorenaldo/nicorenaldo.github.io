@@ -37,7 +37,7 @@ const AchievementSection = () => {
     ]
 
     return <SectionLayout title="Achievement">
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-4">
             {
                 data.map((e) => <AchievementCard key={e.name} achievement={e} />)
             }

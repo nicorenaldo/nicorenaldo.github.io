@@ -35,8 +35,8 @@ const Carousel = ({ images, cover }: CarouselProps) => {
         className={`flex transition-all -translate-x-[100%] duration-300`}
         style={{ transform: `translate(-${100 * index}%,0)` }}
       >
-        {images.map((img) => (
-          <div className='w-full h-full flex-shrink-0'><Image
+        {images.map((img, index) => (
+          <div key={index} className='w-full h-full flex-shrink-0'><Image
             src={img}
             alt='img'
             className={`flex-shrink-0 aspect-video ${

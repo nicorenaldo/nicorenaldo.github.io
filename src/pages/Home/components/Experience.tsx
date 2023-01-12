@@ -15,7 +15,7 @@ const ExperienceSection = () => {
             title: "Junior Engineer",
             duration: 'Aug 2022 - Present',
             description: [
-                "On-the-job training  covering the software engineering fundamentals, best coding practices on common tech stacks and tools used in the industry",
+                "On-the-job training covering the software engineering fundamentals, best coding practices and practical experience on common tech stacks and tools used in the industry",
             ]
         },
         {
@@ -23,8 +23,8 @@ const ExperienceSection = () => {
             title: "Backend Engineer",
             duration: 'Oct 2021 - June 2022',
             description: [
-                "Develop and design a backend architecture for property rental application",
-                "Generated unit testing and documentation for the Android teams"
+                "Implemented REST API backend application using Django to provide a functional interface for a mobile application",
+                "Improved the company's development processes by introducing continuous integration and deployment practices"
             ]
         },
         {
@@ -32,8 +32,8 @@ const ExperienceSection = () => {
             title: "Lead Backend Engineer",
             duration: 'July - Dec 2021',
             description: [
-                "Co-managed a $10,000 research grant, ensured completion of all project deliverables",
-                "Assembled an IoT model for distinguishing chainsaws sounds by utilizing AI on a cloud server"
+                "Worked with real-world datasets to build and optimize CNN models for detecting chainsaw sounds from Mel Spectogram with hyperparameter tuning and regularization techniques",
+                "Acquired and preprocessed data from public YouTube videos for training machine learning models using web scraping and data cleaning techniques",
             ]
         },
         {
@@ -41,23 +41,23 @@ const ExperienceSection = () => {
             title: "Hardware Engineer Intern",
             duration: 'Jan - Mar 2021',
             description: [
-                "Collaborated on a multi-disciplinary project aimed at developing medical stations to provide easy self-checkup",
-                "Integrated glucose and cholesterol sensors to a medical station using Bluetooth communication"
+                "Implemented Raspberry Pi VPN connection for a medical station to provide secure connectivity",
+                "Successfully integrated medical sensors to Raspberry Pi through Bluetooth communication"
             ]
         },
         {
             name: "Gadjah Mada Aerospace Team",
             title: "Electrical Engineer",
-            duration: 'Nov 2018 - June 2021',
+            duration: '2018 - 2021',
             description: [
-                "Collaborated with nine other members to build a rocket payload for collecting atmospheric data, representing Indonesia as the 2nd place winner at AAS International CanSat Competition",
-                "Engineered, tested, and integrated the electrical sub-system for the rocket payload and the ground control system"
+                "Collaborated on a multidiscplinary team to build a rocket payload for collecting atmospheric data, representing Indonesia as the 2nd place winner at AAS International CanSat Competition.",
+                "Designed electronic system of small satellites and ground control system for real-time data acquisition."
             ]
         }
     ]
 
     return <SectionLayout title="Experience">
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-4">
             {
                 data.map((e) => <ExperienceCard key={e.name} experience={e} />)
             }
