@@ -7,12 +7,47 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      backgroundImage: {},
+      typography: {
+        DEFAULT: {
+          css: {
+            img: {
+              'margin-top': 0,
+              'margin-bottom': 0,
+            },
+            a: {
+              'text-decoration': 'none',
+            },
+            ol: {
+              'margin-top': 0,
+              'margin-bottom': 0,
+            },
+            li: {
+              'margin-top': 0,
+              'margin-bottom': 0,
+            },
+          },
+        },
       },
     },
   },
-  plugins: [],
-}
+
+  plugins: [require('@tailwindcss/typography'), require('daisyui')],
+
+  daisyui: {
+    themes: [
+      {
+        light: {
+          ...require('daisyui/src/colors/themes')['[data-theme=light]'],
+          primary: '#007bff',
+        },
+      },
+      {
+        dark: {
+          ...require('daisyui/src/colors/themes')['[data-theme=dark]'],
+          primary: '#3B9AFF',
+        },
+      },
+    ],
+  },
+};
