@@ -1,3 +1,5 @@
+'use client';
+
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import Image from 'next/image';
@@ -35,13 +37,17 @@ const Carousel = ({ images, cover }: CarouselProps) => {
           style={{ transform: `translate(-${100 * index}%,0)` }}
         >
           {images.map((img, index) => (
-            <div key={index} className='w-full h-full flex-shrink-0'>
+            <div
+              key={index}
+              className='w-full h-full flex-shrink-0 relative aspect-video'
+            >
               <Image
                 src={img}
                 alt='img'
                 className={`flex-shrink-0 aspect-video ${
                   cover ? 'object-cover object-top' : 'object-contain'
                 }`}
+                fill={true}
               />
             </div>
           ))}

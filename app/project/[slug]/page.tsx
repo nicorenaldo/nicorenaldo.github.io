@@ -50,7 +50,7 @@ export default function Project({ params }: { params: ProjectParams }) {
       {project.images.length > 0 && (
         <>
           <SubHeading>Photos</SubHeading>
-          {/* <Carousel cover={true} images={project.images} /> */}
+          <Carousel cover={false} images={project.images} />
         </>
       )}
 

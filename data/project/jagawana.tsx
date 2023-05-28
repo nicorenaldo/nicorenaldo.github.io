@@ -1,4 +1,5 @@
 import { HorizontalDivider } from '@/components/Common/Divider';
+import { ImageCaption } from '@/components/Common/ImageCaption';
 import Quote from '@/components/Common/Quote';
 import { Body, SubHeading } from '@/components/Common/Text';
 import Image from 'next/image';
@@ -71,11 +72,18 @@ const Jagawana = (
       machine learning model deployed on the AI Platform. You can see the
       project overview on image below.
     </Body>
-    {/* <Image
-      src='https://i.imgur.com/H0S11qF.png'
-      alt='jagawana-system-overview'
-        caption='Jagawana System Overview'
-    /> */}
+
+    <ImageCaption
+      className='relative w-full aspect-video'
+      caption='Jagawana System Overview'
+      img={
+        <Image
+          src='https://i.imgur.com/H0S11qF.png'
+          alt='jagawana-system-overview'
+          fill={true}
+        />
+      }
+    />
   </>
 );
 
