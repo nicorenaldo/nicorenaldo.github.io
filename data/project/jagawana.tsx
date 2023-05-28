@@ -1,8 +1,13 @@
+import Carousel from '@/components/Common/Carousel';
 import { HorizontalDivider } from '@/components/Common/Divider';
 import { ImageCaption } from '@/components/Common/ImageCaption';
 import Quote from '@/components/Common/Quote';
 import { Body, SubHeading } from '@/components/Common/Text';
 import Image from 'next/image';
+
+import jagawanaComparison from '@/public/images/project/jagawana-comparison.webp';
+import jagawanaOverview from '@/public/images/project/jagawana-overview.webp';
+import jagawanaThumbnail from '@/public/images/project/jagawana-thumbnail.webp';
 
 const Jagawana = (
   <>
@@ -34,7 +39,7 @@ const Jagawana = (
         href='https://grow.google/intl/id_id/bangkit/'
         className='font-bold underline'
       >
-        Bangkit Academy`s Capstone Project
+        Bangkit Academy&apos;s Capstone Project
       </a>
       . My role in this project involves creating the Machine Learning Model,
       designing and developing the Google Cloud Architecture, making the IoT
@@ -60,7 +65,7 @@ const Jagawana = (
         href='https://research.google.com/audioset/'
         className='font-bold underline'
       >
-        Google`s Audioset
+        Google&apos;s Audioset
       </a>
       .
     </Body>
@@ -74,15 +79,15 @@ const Jagawana = (
     </Body>
 
     <ImageCaption
-      className='relative w-full aspect-video'
+      className='w-full'
       caption='Jagawana System Overview'
-      img={
-        <Image
-          src='https://i.imgur.com/H0S11qF.png'
-          alt='jagawana-system-overview'
-          fill={true}
-        />
-      }
+      img={<Image src={jagawanaOverview} alt='jagawana-system-overview' />}
+    />
+
+    <SubHeading>Photos</SubHeading>
+    <Carousel
+      cover={false}
+      images={[jagawanaThumbnail, jagawanaComparison, jagawanaOverview]}
     />
   </>
 );

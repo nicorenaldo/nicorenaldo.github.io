@@ -1,6 +1,10 @@
+import Carousel from '@/components/Common/Carousel';
 import { HorizontalDivider } from '@/components/Common/Divider';
 import Quote from '@/components/Common/Quote';
 import { Body, SubHeading } from '@/components/Common/Text';
+
+import doviThumbnail from '@/public/images/project/dovi-thumbnail.webp';
+import doviPreview from '@/public/images/project/dovi-preview.webp';
 
 const Dovi = (
   <>
@@ -38,6 +42,9 @@ const Dovi = (
       translate it automatically, and review it on their spare time. All in one
       application.
     </Body>
+
+    <SubHeading>Photos</SubHeading>
+    <Carousel cover={false} images={[doviThumbnail, doviPreview]} />
   </>
 );
 

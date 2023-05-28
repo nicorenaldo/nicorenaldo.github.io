@@ -6,8 +6,8 @@ const AboutMe = () => {
     <SectionLayout title='About Me'>
       <Title className='font-light'>
         I am a software engineer with over 3 years experience working on
-        multiple research project across diverse topics. I`m passionate with web
-        development, machine learning, and embedded programming topics.
+        multiple research project across diverse topics. I&apos;m passionate
+        with web development, machine learning, and embedded programming topics.
       </Title>
       <br />
       <Title className='font-light'>

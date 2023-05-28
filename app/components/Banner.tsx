@@ -6,8 +6,8 @@ const Banner = () => {
     <div className='xl:min-h-[80vh] flex flex-col gap-12 mt-8 mb-16 xl:mb-0 xl:mt-24 xl:mr-96 z-10'>
       <Heading className=''>Hello!</Heading>
       <Heading>
-        I`m <span className='font-bold'>Nico Renaldo</span>, a software engineer
-        focused on building creative solutions through technology
+        I&apos;m <span className='font-bold'>Nico Renaldo</span>, a software
+        engineer focused on building creative solutions through technology
       </Heading>
       <div className='flex gap-2'>
         <Title className='font-normal mr-4'>Get in touch</Title>
