@@ -1,6 +1,13 @@
+import Carousel from '@/components/Common/Carousel';
 import { HorizontalDivider } from '@/components/Common/Divider';
 import Quote from '@/components/Common/Quote';
 import { Body, SubHeading } from '@/components/Common/Text';
+
+import itinBrowse from '@/public/images/project/itin-browse.webp';
+import itinCreate from '@/public/images/project/itin-create.webp';
+import itinItem from '@/public/images/project/itin-item.webp';
+import itinModify from '@/public/images/project/itin-modify.webp';
+import itinBook from '@/public/images/project/itin-book.webp';
 
 const Itin = (
   <>
@@ -33,6 +40,12 @@ const Itin = (
       people to make their itinerary in one place, where user could search
       destinations, write notes, see suggestions and sharing it to friends.
     </Body>
+
+    <SubHeading>Photos</SubHeading>
+    <Carousel
+      cover={false}
+      images={[itinBrowse, itinBook, itinCreate, itinItem, itinModify]}
+    />
   </>
 );
 

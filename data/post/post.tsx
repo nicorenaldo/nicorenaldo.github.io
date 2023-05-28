@@ -1,9 +1,28 @@
+import { StaticImageData } from 'next/image';
+import SecuringRaspi from './1-securing-raspi';
+import HeadlessRaspi from './2-headless-raspi';
+
+import securingRaspiThumbnail from '@/public/images/blog/1-openvpn-raspi.webp';
+import headlessRaspiThumbnail from '@/public/images/blog/2-raspi-banner.webp';
+import jagawanaThumbnail from '@/public/images/blog/5-waveform.webp';
+import JagawanaOverview from './3-jagawana-overview';
+import JagawanaIoT from './4-jagawana-iot';
+import JagawanaML from './5-jagawana-ml';
+
 export type Post = {
   date: string;
   title: string;
   description: string;
   slug: string;
-  thumbnail?: string;
+  thumbnail?: StaticImageData;
+  content?: React.ReactNode;
+};
+
+export const emptyPost: Post = {
+  date: '404',
+  title: '404',
+  description: '404',
+  slug: '404',
 };
 
 export const posts: Post[] = [
@@ -13,7 +32,8 @@ export const posts: Post[] = [
     description:
       'Jagawana is a Wide Sensor Network System deployed in the forests to prevent Ilegal Logging. By using sensors to pick up voices in the forests, we could monitor what happened in the forest in real-time.',
     slug: 'jagawana-machine-learning',
-    thumbnail: 'https://imgur.com/kPlY4p6.png',
+    thumbnail: jagawanaThumbnail,
+    content: JagawanaML,
   },
   {
     date: '05 June 2021',
@@ -21,6 +41,7 @@ export const posts: Post[] = [
     description:
       'Jagawana is a Wide Sensor Network System deployed in the forests to prevent Ilegal Logging. By using sensors to pick up voices in the forests, we could monitor what happened in the forest in real-time.',
     slug: 'jagawana-iot',
+    content: JagawanaIoT,
   },
   {
     date: '16 May 2021',
@@ -28,6 +49,7 @@ export const posts: Post[] = [
     description:
       'Jagawana is a Wide Sensor Network System deployed in the forests to prevent Ilegal Logging. By using sensors to pick up voices in the forests, we could monitor what happened in the forest in real-time.',
     slug: 'jagawana-overview',
+    content: JagawanaOverview,
   },
   {
     date: '04 March 2021',
@@ -35,7 +57,8 @@ export const posts: Post[] = [
     description:
       'This article covers setting up the Raspberry Pi 3 Model B+ for headless SSH access over WiFi using Windows 10.',
     slug: 'headless-raspi',
-    thumbnail: 'https://imgur.com/HlqDlPS.jpg',
+    thumbnail: headlessRaspiThumbnail,
+    content: HeadlessRaspi,
   },
   {
     date: '11 February 2021',
@@ -43,6 +66,7 @@ export const posts: Post[] = [
     description:
       'The connection on your IoT project using Raspi may not be as secure as you think, amateur hackers can see everything you do online with simple tools like Packet Sniffers.',
     slug: 'securing-raspi',
-    thumbnail: 'https://imgur.com/05alk7G.jpg',
+    thumbnail: securingRaspiThumbnail,
+    content: SecuringRaspi,
   },
 ];

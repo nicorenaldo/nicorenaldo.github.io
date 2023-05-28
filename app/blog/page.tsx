@@ -35,14 +35,9 @@ const BlogCard = ({ post }: BlogCardProps) => {
         <Body>{post.description}</Body>
       </div>
 
-      <div className='w-full lg:w-64 h-auto lg:aspect-video lg:flex-shrink-0 relative'>
+      <div className='w-full lg:w-64 h-auto lg:aspect-video lg:flex-shrink-0'>
         {post.thumbnail && (
-          <Image
-            src={post.thumbnail}
-            alt='thumbnail'
-            className='rounded-lg'
-            fill={true}
-          />
+          <Image src={post.thumbnail} alt='thumbnail' className='rounded-lg' />
         )}
       </div>
     </div>

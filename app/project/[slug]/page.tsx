@@ -47,13 +47,6 @@ export default function Project({ params }: { params: ProjectParams }) {
     <ProjectLayout title={project.name} date={project.date}>
       {project.content}
 
-      {project.images.length > 0 && (
-        <>
-          <SubHeading>Photos</SubHeading>
-          <Carousel cover={false} images={project.images} />
-        </>
-      )}
-
       {project.video !== undefined && (
         <>
           <SubHeading>Video</SubHeading>

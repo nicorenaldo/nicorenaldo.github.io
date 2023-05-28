@@ -24,13 +24,8 @@ type ProjectCardProps = {
 const ProjectCard = ({ project: e }: ProjectCardProps) => {
   return (
     <div className='flex flex-col md:flex-row gap-4 items-center md:items-start'>
-      <div className='basis-2/4 md:basis-1/4 relative w-full aspect-[2/1]'>
-        <Image
-          src={e.thumbnail}
-          alt='thumbnail'
-          className='rounded'
-          fill={true}
-        />
+      <div className='basis-2/4 md:basis-1/4 relative w-full'>
+        <Image src={e.thumbnail} alt='thumbnail' className='rounded' />
       </div>
 
       <div className='w-full md:basis-3/4'>
