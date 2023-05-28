@@ -1,5 +1,6 @@
 import React from 'react';
 import { Body, Heading } from '../Common/Text';
+import Head from 'next/head';
 
 type ProjectLayoutProps = {
   title: string;

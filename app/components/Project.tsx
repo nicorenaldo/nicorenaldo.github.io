@@ -1,58 +1,15 @@
 import { ArrowRightIcon } from '@/components/Common/Icon';
 import { Body, Caption, Title } from '@/components/Common/Text';
 import SectionLayout from '@/components/Layout/SectionLayout';
+import { Project, projects } from '@/data/project/project';
 import Image from 'next/image';
 import Link from 'next/link';
 
-type Project = {
-  name: string;
-  description: string;
-  thumbnail: string;
-  slug: string;
-  tags: string[];
-};
-
 const ProjectSection = () => {
-  const data: Project[] = [
-    // TODO: Tambahin Gobi, Project di Shopee ?
-    {
-      name: 'Dovi',
-      description:
-        'A mobile language learning app built with Flutter and Firebase that employs spaced repetition algorithm to improve user learning rate ',
-      thumbnail: 'https://i.imgur.com/lg1uB4e.png',
-      slug: 'dovi',
-      tags: ['Flutter', 'Firebase'],
-    },
-    {
-      name: 'Jagawana',
-      description:
-        'Research on chainsaw detection using IoT device and machine learning',
-      thumbnail: 'https://i.imgur.com/u7JWAoM.png',
-      slug: 'jagawana',
-      tags: ['Audio Signal Processing', 'Tensorflow', 'IoT', 'Google Cloud'],
-    },
-    {
-      name: 'Itin',
-      description:
-        'A trip planning web application to easily make, share, and browse itineraries',
-      thumbnail: 'https://i.imgur.com/BLzc1fk.png',
-      slug: 'itin',
-      tags: ['Django'],
-    },
-    {
-      name: 'AyoLomba!',
-      description:
-        'A centralized web platform to manage competition registration and advertising',
-      thumbnail: 'https://i.imgur.com/rzziXmO.png',
-      slug: 'ayolomba',
-      tags: ['Django'],
-    },
-  ];
-
   return (
     <SectionLayout title='My Project'>
       <div className='flex flex-col gap-10'>
-        {data.map((e, index) => (
+        {projects.map((e, index) => (
           <ProjectCard key={index} project={e} />
         ))}
       </div>
@@ -78,7 +35,7 @@ const ProjectCard = ({ project: e }: ProjectCardProps) => {
 
       <div className='w-full md:basis-3/4'>
         <Link
-          href={`/projects/${e.slug}`}
+          href={`/project/${e.slug}`}
           aria-label={`Navigate to project ${e.name}`}
         >
           <Title className='group flex gap-4 items-center'>
