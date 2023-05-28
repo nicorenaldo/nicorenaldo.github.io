@@ -21,7 +21,7 @@ const fetchProjectData = (slug: string): Project => {
 
 export async function generateMetadata(
   { params }: { params: ProjectParams },
-  parent?: ResolvingMetadata
+  parent: ResolvingMetadata
 ): Promise<Metadata> {
   const project = fetchProjectData(params.slug);
 
