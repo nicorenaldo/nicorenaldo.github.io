@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 import { RootState } from './store';
 
 export type AppState = {
@@ -13,11 +13,9 @@ export const appSlice = createSlice({
     name: 'app',
     initialState,
     reducers: {
-        changeTheme: (state) => {
-            if (state.theme === 'light') {
-                state.theme = 'black'
-            } else {
-                state.theme = 'light'
+        changeTheme: (state, action: PayloadAction<string | null>) => {
+            if (action.payload === 'light' || action.payload === 'black') {
+                state.theme = action.payload
             }
         },
     },

@@ -7,11 +7,11 @@ const useThemeDaisy = () => {
 
   // Respond to the `storage` event
   function toggleChangeTheme() {
-    dispatch(changeTheme());
+    dispatch(changeTheme(localStorage.getItem('theme')));
   }
 
   useEffect(() => {
-    dispatch(changeTheme());
+    dispatch(changeTheme(localStorage.getItem('theme')));
   }, [dispatch]);
 
   return { toggleChangeTheme };
