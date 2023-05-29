@@ -1,6 +1,7 @@
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navigation/Navbar';
 import Sidebar from '@/components/Navigation/Sidebar';
+import { DefaultKeyword } from '@/data/keyword';
 import CustomProvider from '@/redux/provider';
 import { setupStore } from '@/redux/store';
 import { Inter } from 'next/font/google';
@@ -12,8 +13,7 @@ export const metadata = {
   title: 'Nico Renaldo',
   description:
     'Welcome to the personal website of Nico Renaldo, showcasing my portfolio and expertise in software and engineering.',
-  keywords:
-    'Nico Renaldo, personal website, portfolio, software engineer, universitas gadjah mada, UGM',
+  keywords: DefaultKeyword,
 };
 
 const store = setupStore();

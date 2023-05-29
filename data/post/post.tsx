@@ -16,6 +16,7 @@ export type Post = {
   slug: string;
   thumbnail?: StaticImageData;
   content?: React.ReactNode;
+  keyword: string;
 };
 
 export const emptyPost: Post = {
@@ -23,6 +24,7 @@ export const emptyPost: Post = {
   title: '404',
   description: '404',
   slug: '404',
+  keyword: '',
 };
 
 export const posts: Post[] = [
@@ -34,6 +36,8 @@ export const posts: Post[] = [
     slug: 'jagawana-machine-learning',
     thumbnail: jagawanaThumbnail,
     content: JagawanaML,
+    keyword:
+      'jagawana, bangkit 2021, top 15 project, google bangkit, google, chainsaw detection, cnn model, machine learning, sound classification, tensorflow, audio signal processing',
   },
   {
     date: '05 June 2021',
@@ -42,6 +46,8 @@ export const posts: Post[] = [
       'Jagawana is a Wide Sensor Network System deployed in the forests to prevent Ilegal Logging. By using sensors to pick up voices in the forests, we could monitor what happened in the forest in real-time.',
     slug: 'jagawana-iot',
     content: JagawanaIoT,
+    keyword:
+      'jagawana, bangkit 2021, top 15 project, google bangkit, google, chainsaw detection, cnn model, machine learning, sound classification, tensorflow, audio signal processing',
   },
   {
     date: '16 May 2021',
@@ -50,6 +56,8 @@ export const posts: Post[] = [
       'Jagawana is a Wide Sensor Network System deployed in the forests to prevent Ilegal Logging. By using sensors to pick up voices in the forests, we could monitor what happened in the forest in real-time.',
     slug: 'jagawana-overview',
     content: JagawanaOverview,
+    keyword:
+      'jagawana, bangkit 2021, top 15 project, google bangkit, google, chainsaw detection, cnn model, machine learning, sound classification, tensorflow, audio signal processing',
   },
   {
     date: '04 March 2021',
@@ -59,6 +67,7 @@ export const posts: Post[] = [
     slug: 'headless-raspi',
     thumbnail: headlessRaspiThumbnail,
     content: HeadlessRaspi,
+    keyword: 'raspi, raspberry pi, headless, setup',
   },
   {
     date: '11 February 2021',
@@ -68,5 +77,6 @@ export const posts: Post[] = [
     slug: 'securing-raspi',
     thumbnail: securingRaspiThumbnail,
     content: SecuringRaspi,
+    keyword: 'raspberry pi, raspi, openvpn',
   },
 ];

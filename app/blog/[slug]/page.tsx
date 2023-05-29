@@ -1,4 +1,5 @@
 import BlogLayout from '@/components/Layout/BlogLayout';
+import { DefaultKeyword } from '@/data/keyword';
 import { Post, emptyPost, posts } from '@/data/post/post';
 import { Metadata, ResolvingMetadata } from 'next';
 
@@ -23,6 +24,8 @@ export async function generateMetadata(
 
   return {
     title: `${post.title} | Nico Renaldo`,
+    description: post.description,
+    keywords: `${post.keyword}, ${DefaultKeyword}`,
   };
 }
 

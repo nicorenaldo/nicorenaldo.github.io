@@ -1,8 +1,8 @@
-import Carousel from '@/components/Common/Carousel';
 import Iframe from '@/components/Common/Iframe';
 import Tags from '@/components/Common/Tags';
 import { SubHeading } from '@/components/Common/Text';
 import ProjectLayout from '@/components/Layout/ProjectLayout';
+import { DefaultKeyword } from '@/data/keyword';
 import { Project, emptyProject, projects } from '@/data/project/project';
 import { Metadata, ResolvingMetadata } from 'next';
 
@@ -27,6 +27,8 @@ export async function generateMetadata(
 
   return {
     title: `${project.name} | Nico Renaldo`,
+    description: project.description,
+    keywords: `${project.keyword}, ${DefaultKeyword}`,
   };
 }
 
