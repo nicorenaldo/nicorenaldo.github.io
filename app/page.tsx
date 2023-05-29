@@ -1,12 +1,11 @@
 import AboutMe from '@/app/components/AboutMe';
-import Link from 'next/link';
 import AchievementSection from './components/Achievement';
+import Banner from './components/Banner';
+import BlogRedirect from './components/Blog';
 import ExperienceSection from './components/Experience';
 import ProjectSection from './components/Project';
-import BlogRedirect from './components/Blog';
-import Banner from './components/Banner';
 
-export default function Home() {
+export default function App() {
   return (
     <main className='flex flex-col px-8 xl:pl-24'>
       <Banner />

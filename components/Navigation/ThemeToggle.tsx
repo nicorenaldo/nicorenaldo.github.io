@@ -1,24 +1,36 @@
-// import { MoonIcon, SunIcon } from '../Common/Icon';
+'use client';
 
-// const ThemeToggle = () => {
-//   const { toggleChangeTheme } = useThemeDaisy();
-//   const { theme:currentTheme } = useAppSelector(selectApp);
+import { selectApp } from '@/redux/appSlice';
+import { useAppSelector } from '@/redux/hooks';
+import useThemeDaisy from '@/utils/useThemeDaisy';
+import { useEffect } from 'react';
+import { themeChange } from 'theme-change';
+import { MoonIcon, SunIcon } from '../Common/Icon';
 
-//   return (
-//     <div className='form-control z-10'>
-//       <label className='cursor-pointer flex gap-2 items-center'>
-//         <SunIcon />
-//           <input
-//           data-toggle-theme='dark,light'
-//             type='checkbox'
-//             className='toggle'
-//             onChange={() => toggleChangeTheme()}
-//             checked={currentTheme === 'dark'}
-//           />
-//         <MoonIcon />
-//       </label>
-//     </div>
-//   );
-// };
+const ThemeToggle = () => {
+  const { toggleChangeTheme } = useThemeDaisy();
+  const { theme: currentTheme } = useAppSelector(selectApp);
 
-// export default ThemeToggle
+  useEffect(() => {
+    themeChange(false);
+    // 👆 false parameter is required for react project
+  }, []);
+
+  return (
+    <div className='form-control z-10'>
+      <label className='cursor-pointer flex gap-2 items-center'>
+        <SunIcon />
+        <input
+          data-toggle-theme='black,light'
+          type='checkbox'
+          className='toggle'
+          onChange={() => toggleChangeTheme()}
+          checked={currentTheme === 'black'}
+        />
+        <MoonIcon />
+      </label>
+    </div>
+  );
+};
+
+export default ThemeToggle;

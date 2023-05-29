@@ -4,6 +4,7 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './redux/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
@@ -37,15 +38,17 @@ module.exports = {
   daisyui: {
     themes: [
       {
-        light: {
-          ...require('daisyui/src/colors/themes')['[data-theme=light]'],
-          primary: '#007bff',
-        },
-      },
-      {
         dark: {
           ...require('daisyui/src/colors/themes')['[data-theme=dark]'],
           primary: '#3B9AFF',
+          background: '#131516',
+        },
+      },
+      {
+        light: {
+          ...require('daisyui/src/colors/themes')['[data-theme=light]'],
+          primary: '#007BFF',
+          background: '#FFFFFF',
         },
       },
     ],

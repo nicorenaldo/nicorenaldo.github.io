@@ -1,6 +1,8 @@
+'use client';
+
 import MenuIcon from '@mui/icons-material/Menu';
-// import ThemeToggle from './ThemeToggle';
 import Link from 'next/link';
+import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
   return (
@@ -17,13 +19,13 @@ const Navbar = () => {
         </div>
 
         {/* Dark Mode Toggle */}
-        {/* <ThemeToggle /> */}
+        <ThemeToggle />
       </div>
 
       {/* Mobile  */}
       <div className='block md:hidden m-4 text-end z-10'>
         <label htmlFor='navbar-drawer' className='drawer-button z-10'>
-          {/* <MenuIcon className='z-10' /> */}
+          <MenuIcon className='z-10' />
         </label>
       </div>
     </>
