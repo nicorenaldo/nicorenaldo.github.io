@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://nicorenaldo.dev
+
+# Sitemaps
+Sitemap: https://nicorenaldo.dev/sitemap.xml
