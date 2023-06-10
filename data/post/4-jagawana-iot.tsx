@@ -49,13 +49,13 @@ const JagawanaIoT = (
     <Body>
       The device will be deployed in a remote location, which means the device
       needs to be sustainable. Our solution is by using a solar panel and a
-      battery. We haven&apos;t started our research on this, so I will skip the
+      battery. We haven't started our research on this, so I will skip the
       details.
     </Body>
 
     <Body>
       Our device will be the ears, listening to every sound inside the forest.
-      We haven&apos;t found a suitable microphone module for the job, as the
+      We haven't found a suitable microphone module for the job, as the
       microphone is supposed to hear from distances (~100m — 1000m) to be
       efficient and cutting down the number of devices needed. Our prototyping
       model uses a generic microphone module such as MAX9814 (Analog) or INMP44
@@ -64,14 +64,13 @@ const JagawanaIoT = (
     <Body>
       To prevent overloading the memory and transmission, we need a mechanism to
       prevent any sounds to trigger the device. We are proposing the idea to use
-      the same mechanism as Amazon&apos;s Alexa and other home devices. Alexa
-      didn&apos;t send any audio data to the cloud until the wake word is
-      called. The way it works is by having Alexa listening all the time,
-      storing a short audio data into the buffer memory, process it whether the
-      wake word is called or not, if not then Alexa will record a short audio
-      data again replacing the buffer memory. Using this mechanism, Alexa
-      won&apos;t run out of data even if it listens to our conversation all day
-      long.
+      the same mechanism as Amazon's Alexa and other home devices. Alexa didn't
+      send any audio data to the cloud until the wake word is called. The way it
+      works is by having Alexa listening all the time, storing a short audio
+      data into the buffer memory, process it whether the wake word is called or
+      not, if not then Alexa will record a short audio data again replacing the
+      buffer memory. Using this mechanism, Alexa won't run out of data even if
+      it listens to our conversation all day long.
     </Body>
     <Body>The general idea would look like the flowchart below.</Body>
 
@@ -83,7 +82,7 @@ const JagawanaIoT = (
 
     <Body>
       Our first plan is to use a simple CNN model fitted into our device, we
-      haven&apos;t researched that area yet so we proposed a plan B which is by
+      haven't researched that area yet so we proposed a plan B which is by
       analyzing the audio data and use the chainsaw frequency as the trigger.
       Chainsaw sounds dominate in frequency bands between 500 Hz and 8 kHz, by
       extracting the audio data into Mel Spectrogram, we could see the
@@ -175,7 +174,7 @@ const JagawanaIoT = (
     </Body>
     <Body>
       Recording audio data is a challenge itself, but to store the audio data
-      has a trick on it&apos;s own. There is a thing called
+      has a trick on it's own. There is a thing called
       <a
         href='https://www.embedded.com/introduction-to-direct-memory-access/'
         className='font-bold underline'
@@ -192,9 +191,8 @@ const JagawanaIoT = (
       >
         library
       </a>{' '}
-      I found only supports DMA and I2S, so me and my analog microphone
-      can&apos;t use the library. After gone through testing and searching, I
-      found this{' '}
+      I found only supports DMA and I2S, so me and my analog microphone can't
+      use the library. After gone through testing and searching, I found this{' '}
       <a
         href='https://github.com/knolleary/pubsubclient'
         className='font-bold underline'
@@ -207,9 +205,9 @@ const JagawanaIoT = (
     <Body>
       The code on the repo itself is quite explanatory, it has several
       configuration code to adjust the parameter like duration and sampling
-      rate. I&apos;m trying to adjust it to my dataset which is using 8-bit
-      resolution and 16KHz sampling rate but the audio file got distorted,
-      I&apos;m still trying to figure out the solution.
+      rate. I'm trying to adjust it to my dataset which is using 8-bit
+      resolution and 16KHz sampling rate but the audio file got distorted, I'm
+      still trying to figure out the solution.
     </Body>
 
     <Title>Sending Data to MQTT</Title>
@@ -222,8 +220,8 @@ const JagawanaIoT = (
       >
         article about MQTT
       </a>
-      . Using C++ and Arduino IDE, I&apos;m using the most popular MQTT library
-      out there from{' '}
+      . Using C++ and Arduino IDE, I'm using the most popular MQTT library out
+      there from{' '}
       <a
         href='https://github.com/knolleary/pubsubclient'
         className='font-bold underline'
@@ -233,21 +231,20 @@ const JagawanaIoT = (
       .
     </Body>
     <Body>
-      Although it&apos;s not intended to be, I&apos;m going to send my audio
-      data through MQTT for the sake of fast prototyping. Through my experiment,
-      a 10-second audio data (44100Hz Sampling Rate) takes about 800 KB of
-      memory. The PubSubClient has a maximum packet size of 256 bytes by
-      default, there is just no way I could send the full data in one go. What I
-      had to do is to read and send the audio data chunk by chunk, the data will
-      go to a buffer variable and replaced by a new chunk and another.
+      Although it's not intended to be, I'm going to send my audio data through
+      MQTT for the sake of fast prototyping. Through my experiment, a 10-second
+      audio data (44100Hz Sampling Rate) takes about 800 KB of memory. The
+      PubSubClient has a maximum packet size of 256 bytes by default, there is
+      just no way I could send the full data in one go. What I had to do is to
+      read and send the audio data chunk by chunk, the data will go to a buffer
+      variable and replaced by a new chunk and another.
     </Body>
     <Body>
       I first started reading and sending a chunk of 64 bytes, the whole file
       takes 147-second with a total of 13782 packets sent. It takes too much
-      time since the buffer size is too small, I ended up editing the
-      library&apos;s maximum packet size, and change the buffer size to 512
-      bytes. The file is successfully sent in 23-second with a total of 1723
-      sent.
+      time since the buffer size is too small, I ended up editing the library's
+      maximum packet size, and change the buffer size to 512 bytes. The file is
+      successfully sent in 23-second with a total of 1723 sent.
     </Body>
     <Body>
       To receive the data properly on the other side, I had the ESP32 send
@@ -258,8 +255,8 @@ const JagawanaIoT = (
     <SubHeading>Last Words</SubHeading>
     <Body>
       The prototype is still in the early stages, there are many things to
-      improve or even hasn&apos;t started yet. This project really challenges me
-      since I haven&apos;t worked with audio data before on a microcontroller.
+      improve or even hasn't started yet. This project really challenges me
+      since I haven't worked with audio data before on a microcontroller.
       Formatting and saving data is a big challenge. Transmitting the audio data
       through WiFi is already troublesome enough, but doing the same thing on
       LoRa network will be even more challenging.

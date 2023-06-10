@@ -12,11 +12,11 @@ const SecuringRaspi = (
 
     <Body>
       When you are making IoT project using Raspi, you may found yourself ended
-      up using public WiFi for Raspi&apos;s internet connection. While this may
-      grant you internet for your raspi, this connection may not be as secure as
-      you think, amateur hackers can see everything you do online with simple
-      tools like Packet Sniffers. Luckily we can mitigate these threats by
-      setting up a VPN connection on the Raspi.
+      up using public WiFi for Raspi's internet connection. While this may grant
+      you internet for your raspi, this connection may not be as secure as you
+      think, amateur hackers can see everything you do online with simple tools
+      like Packet Sniffers. Luckily we can mitigate these threats by setting up
+      a VPN connection on the Raspi.
     </Body>
     <Body>
       What a VPN does basically, is creating a safe tunnel to the VPN server.
@@ -43,7 +43,7 @@ const SecuringRaspi = (
     <Body>
       For connecting your raspi (as client) to the VPN server, what you need is
       the .ovpn files generated from the server itself. For this experiment I
-      was using a private VPN server so I can&apos;t share the file for this
+      was using a private VPN server so I can't share the file for this
       tutorial, but you can find some public VPN server from{' '}
       <a
         href='https://www.freeopenvpn.org/en/'
@@ -79,7 +79,7 @@ const SecuringRaspi = (
 
     <Body>
       After you got the file, all you need to do is run the openvpn program,
-      also change the file name to the matching file&apos;s name :
+      also change the file name to the matching file's name :
     </Body>
     <Body>
       If all works well, you should see the line of “Initialization Sequence
@@ -104,9 +104,8 @@ const SecuringRaspi = (
     <Body>
       Since our raspi is connected, now you can do a SSH connection to your
       raspi from a different network, through the VPN, how great is that right ?
-      You can see the example below of how I monitored the Raspi using the
-      it&apos;s IP address on the VPN Network (the IP on tun0 parameter,
-      10.70.132.2)
+      You can see the example below of how I monitored the Raspi using the it's
+      IP address on the VPN Network (the IP on tun0 parameter, 10.70.132.2)
     </Body>
 
     <ImageCaption
@@ -119,8 +118,8 @@ const SecuringRaspi = (
     <Body>
       Tadaa!!! Your Raspberry Pi is successfully connected through the VPN and
       can be accessed by SSH or FTP from device with same VPN network. Your next
-      things to do is making sure the OpenVPN will run on boot up, but
-      that&apos;s gonna be on another story.
+      things to do is making sure the OpenVPN will run on boot up, but that's
+      gonna be on another story.
     </Body>
 
     <Body>

@@ -37,11 +37,10 @@ const AyoLomba = (
     <Body>
       AyoLomba! is created using Django and hosted on Heroku. While there are
       many option to find information about events, most of them rely on social
-      media like Instagram and Line that doesn&apos;t have any filtering
-      feature. This is why we are motivated to create a dedicated platform using
-      web and android app, that solve this irritable issue. This project is made
-      prior to the emerging giant Sejuta Cita which holds the same concept with
-      us.
+      media like Instagram and Line that doesn't have any filtering feature.
+      This is why we are motivated to create a dedicated platform using web and
+      android app, that solve this irritable issue. This project is made prior
+      to the emerging giant Sejuta Cita which holds the same concept with us.
     </Body>
 
     <SubHeading>Photos</SubHeading>

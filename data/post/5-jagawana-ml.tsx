@@ -3,10 +3,10 @@ import Quote from '@/components/Common/Quote';
 import { Body, SubHeading, Title } from '@/components/Common/Text';
 import Image from 'next/image';
 
-import waveform from '@/public/images/blog/5-waveform.webp';
 import waveformClip from '@/public/images/blog/5-waveform-clip.webp';
 import waveformMel from '@/public/images/blog/5-waveform-mel.webp';
 import waveformTraining from '@/public/images/blog/5-waveform-training.webp';
+import waveform from '@/public/images/blog/5-waveform.webp';
 
 const JagawanaML = (
   <>
@@ -42,8 +42,8 @@ const JagawanaML = (
         link
       </a>
       . Developing the model in the Kaggle is really helpful since the dataset
-      is saved on Kaggle Server, so we don&apos;t need to download it over and
-      over again like in Google Colab.
+      is saved on Kaggle Server, so we don't need to download it over and over
+      again like in Google Colab.
     </Body>
 
     <Title>Datasets</Title>
@@ -72,15 +72,15 @@ const JagawanaML = (
           href='https://research.google.com/audioset/'
           className='font-bold underline'
         >
-          Google&apos;t Audioset
+          Google't Audioset
         </a>{' '}
         : Chainsaw, crackling fire, and gunshot sounds
       </li>
     </ol>
     <Body>
-      Google&apos;t Audioset data consists of CSV data with youtube links,
-      intervals, and categories. To actually get the audio data you need to do
-      some more work, I use the script from{' '}
+      Google't Audioset data consists of CSV data with youtube links, intervals,
+      and categories. To actually get the audio data you need to do some more
+      work, I use the script from{' '}
       <a
         href='https://github.com/aoifemcdonagh/audioset-processing'
         className='font-bold underline'
@@ -136,10 +136,10 @@ const JagawanaML = (
     <Body>
       A waveform is an amplitude measurement put in a time series. There are
       many disadvantages to analyze the waveform, the data is big and messy, and
-      the machine learning model doesn&apos;t perform well. The way around it is
-      by analyzing the audio data and turn it into features, by analyzing it on
-      the frequency domain (rather than amplitude) using math. In our
-      experiment, we are using the{' '}
+      the machine learning model doesn't perform well. The way around it is by
+      analyzing the audio data and turn it into features, by analyzing it on the
+      frequency domain (rather than amplitude) using math. In our experiment, we
+      are using the{' '}
       <a
         href='https://towardsdatascience.com/getting-to-know-the-mel-spectrogram-31bca3e2d9d0'
         className='font-bold underline'

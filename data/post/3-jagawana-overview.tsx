@@ -2,10 +2,10 @@ import { ImageCaption } from '@/components/Common/ImageCaption';
 import { Body, SubHeading, Title } from '@/components/Common/Text';
 import Image from 'next/image';
 
+import Iframe from '@/components/Common/Iframe';
+import jagawanaIllustration from '@/public/images/project/jagawana-illustration.webp';
 import jagawanaOverview from '@/public/images/project/jagawana-overview.webp';
 import jagawanaThumbnail from '@/public/images/project/jagawana-thumbnail.webp';
-import jagawanaIllustration from '@/public/images/project/jagawana-illustration.webp';
-import Iframe from '@/components/Common/Iframe';
 
 const JagawanaOverview = (
   <>
@@ -21,10 +21,9 @@ const JagawanaOverview = (
       After forming our group (2 members from each learning path), we start
       brainstorming our ideas, looking over various themes and different
       problems, and eventually, we decided to tackle the problem of illegal
-      logging through Indonesia&apos;s forest. While it may not have huge
-      business potential like Bangkit intended, we still think this idea is
-      unique and interesting to tackle and could be implemented in this very
-      nation.
+      logging through Indonesia's forest. While it may not have huge business
+      potential like Bangkit intended, we still think this idea is unique and
+      interesting to tackle and could be implemented in this very nation.
     </Body>
 
     <SubHeading>Problems and Solutions</SubHeading>
@@ -112,7 +111,7 @@ const JagawanaOverview = (
       categories, the number of categories it could predict depends on the
       dataset it is used to train to. Due to limitations of time and data,
       currently, we are only classifying chainsaws, crackling fire, and gunshot
-      sounds. I&apos;m using Kaggle to train the model, where the model will be
+      sounds. I'm using Kaggle to train the model, where the model will be
       deployed in GCP. More details on the journey of developing the Machine
       Learning Model here.
     </Body>
@@ -120,9 +119,9 @@ const JagawanaOverview = (
     <Title>4. Android Application</Title>
     <Body>
       The Android App will be our last checkpoint, we are going to access the
-      data stored and processed by GCP using Android App. The app&apos;s main
-      tasks are to notify the user if there were any suspicious activity, giving
-      maps of location, and playing the suspicious audio detected.
+      data stored and processed by GCP using Android App. The app's main tasks
+      are to notify the user if there were any suspicious activity, giving maps
+      of location, and playing the suspicious audio detected.
     </Body>
 
     <Title>Our overall project would look like the image below.</Title>
@@ -140,10 +139,10 @@ const JagawanaOverview = (
     <Body>
       We are working towards completing our MVP product, but there are still
       many improvements and features that we could add to the project. Some of
-      the features that we didn&apos;t include is using ML to map out
-      animal&apos;s habitat using their sounds and detecting human voices. I
-      hope this article would inspire others to take the research further, feel
-      free to ask/discuss in the comment section.
+      the features that we didn't include is using ML to map out animal's
+      habitat using their sounds and detecting human voices. I hope this article
+      would inspire others to take the research further, feel free to
+      ask/discuss in the comment section.
     </Body>
   </>
 );

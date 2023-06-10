@@ -2,11 +2,11 @@ import { ImageCaption } from '@/components/Common/ImageCaption';
 import { Body, Title } from '@/components/Common/Text';
 import Image from 'next/image';
 
-import banner from '@/public/images/blog/2-raspi-banner.webp';
-import initialMenu from '@/public/images/blog/2-raspi-imager-menu.webp';
-import imagerChoose from '@/public/images/blog/2-raspi-imager-choose.webp';
 import puttyExample from '@/public/images/blog/2-putty-example.webp';
 import puttyTerminal from '@/public/images/blog/2-putty-terminal.webp';
+import banner from '@/public/images/blog/2-raspi-banner.webp';
+import imagerChoose from '@/public/images/blog/2-raspi-imager-choose.webp';
+import initialMenu from '@/public/images/blog/2-raspi-imager-menu.webp';
 import saveAllFile from '@/public/images/blog/2-save-allfiles.webp';
 
 const HeadlessRaspi = (
@@ -134,16 +134,16 @@ const HeadlessRaspi = (
 
     <Title>Step 4. Establishing a Connection</Title>
     <Body>
-      To start a SSH connection, you had to know it&apos;s local IP address
-      first, you can get it easily by using a third-party IP scanner
-      application. There is{' '}
+      To start a SSH connection, you had to know it's local IP address first,
+      you can get it easily by using a third-party IP scanner application. There
+      is{' '}
       <a
         href='https://play.google.com/store/apps/details?id=com.overlook.android.fing&hl=in&gl=US'
         className='font-bold underline'
       >
         Fing
       </a>{' '}
-      for smartphone, and there&apos;s{' '}
+      for smartphone, and there's{' '}
       <a
         href='https://angryip.org/download/#windows'
         className='font-bold underline'

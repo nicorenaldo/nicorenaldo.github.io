@@ -6,7 +6,8 @@
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/strict-boolean-expressions": "off",
     "react/react-in-jsx-scope": "off",
-    "quotes": ["error", "single"],
+    "react/no-unescaped-entities": "off",
+    "quotes": ["error", "single", { "avoidEscape": true }],
     "multiline-ternary": "off"
   }
 }

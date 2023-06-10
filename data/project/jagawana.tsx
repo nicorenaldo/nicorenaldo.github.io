@@ -39,7 +39,7 @@ const Jagawana = (
         href='https://grow.google/intl/id_id/bangkit/'
         className='font-bold underline'
       >
-        Bangkit Academy&apos;s Capstone Project
+        Bangkit Academy's Capstone Project
       </a>
       . My role in this project involves creating the Machine Learning Model,
       designing and developing the Google Cloud Architecture, making the IoT
@@ -65,7 +65,7 @@ const Jagawana = (
         href='https://research.google.com/audioset/'
         className='font-bold underline'
       >
-        Google&apos;s Audioset
+        Google's Audioset
       </a>
       .
     </Body>
