@@ -15,9 +15,21 @@ export const ExperienceData: Experience[] = [
     duration: 'Aug 2022 - Present',
     link: 'https://www.linkedin.com/company/seagrp',
     description: [
-      'Provided reliable and sustainable solutions for various machine and network issues, enhancing system uptime and performance.',
+      'Conducted root cause analysis on node, network, and application level, ensuring system uptime and performance.',
       'Developed internal platforms to automate operations, resulting in improved efficiency and reduced manual workload.',
       'Implemented service capacity analysis before campaigns, ensuring seamless user experience and service availability.',
+    ],
+  },
+  {
+    name: 'Bangkit Academy led by Google',
+    jobTitle: 'Capstone Project Advisor',
+    location: 'Jakarta, Indonesia',
+    duration: 'June - July 2023',
+    link: 'https://grow.google/intl/id_id/bangkit',
+    description: [
+      'Leveraged extensive technical knowledge to help teams navigate complex challenges and implement effective solutions.',
+      'Provided strategic guidance to various teams on application architecture design and development planning.',
+      'Advised teams on technical aspects such as machine learning models deployment and training optimization.',
     ],
   },
   {
