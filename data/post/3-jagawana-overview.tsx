@@ -6,6 +6,7 @@ import Iframe from '@/components/Common/Iframe';
 import jagawanaIllustration from '@/public/images/project/jagawana-illustration.webp';
 import jagawanaOverview from '@/public/images/project/jagawana-overview.webp';
 import jagawanaThumbnail from '@/public/images/project/jagawana-thumbnail.webp';
+import Link from 'next/link';
 
 const JagawanaOverview = (
   <>
@@ -143,6 +144,20 @@ const JagawanaOverview = (
       habitat using their sounds and detecting human voices. I hope this article
       would inspire others to take the research further, feel free to
       ask/discuss in the comment section.
+    </Body>
+
+    <SubHeading>Continue reading about Jagawana</SubHeading>
+    <Body>
+      <Link href='/blog/jagawana-iot' className='font-bold underline'>
+        The IoT component of Jagawana
+      </Link>
+      <br />
+      <Link
+        href='/blog/jagawana-machine-learning'
+        className='font-bold underline'
+      >
+        The machine learning behind Jagawana
+      </Link>
     </Body>
   </>
 );

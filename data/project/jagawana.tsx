@@ -5,15 +5,18 @@ import Quote from '@/components/Common/Quote';
 import { Body, SubHeading } from '@/components/Common/Text';
 import Image from 'next/image';
 
+import Iframe from '@/components/Common/Iframe';
 import jagawanaComparison from '@/public/images/project/jagawana-comparison.webp';
 import jagawanaOverview from '@/public/images/project/jagawana-overview.webp';
 import jagawanaThumbnail from '@/public/images/project/jagawana-thumbnail.webp';
+import Link from 'next/link';
 
 const Jagawana = (
   <>
     <Quote>
       Research on chainsaw detection using IoT device and machine learning
     </Quote>
+
     <SubHeading>Project Brief</SubHeading>
     <Body>
       Jagawana is a wide sensor network system deployed in the forests to
@@ -28,6 +31,9 @@ const Jagawana = (
       suspicious events were happening in the forest.
     </Body>
     <HorizontalDivider />
+
+    <Iframe src='https://www.youtube.com/embed/nLUPU1pUyE0' />
+
     <Body>
       This project combines{' '}
       <span className='font-bold'>
@@ -89,6 +95,14 @@ const Jagawana = (
       cover={false}
       images={[jagawanaThumbnail, jagawanaComparison, jagawanaOverview]}
     />
+
+    <SubHeading>More about Jagawana</SubHeading>
+    <Body>
+      Check out the detailed blog post of the project{' '}
+      <Link href='/blog/jagawana-overview' className='font-bold underline'>
+        here
+      </Link>
+    </Body>
   </>
 );
 

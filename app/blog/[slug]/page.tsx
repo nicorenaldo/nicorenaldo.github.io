@@ -23,9 +23,15 @@ export async function generateMetadata(
   const post = fetchPostData(params.slug);
 
   return {
-    title: `${post.title} | Nico Renaldo`,
+    title: `${post.title} | Nico Renaldo Blog`,
     description: post.description,
     keywords: `${post.keyword}, ${DefaultKeyword}`,
+    openGraph: {
+      title: `${post.title} | Nico Renaldo Blog`,
+      description: post.description,
+      tags: `${post.keyword}, ${DefaultKeyword}`,
+      authors: 'Nico Renaldo',
+    },
   };
 }
 

@@ -32,32 +32,32 @@ export const posts: Post[] = [
     date: '10 June 2021',
     title: 'Jagawana — Machine Learning In Depth',
     description:
-      'Jagawana is a Wide Sensor Network System deployed in the forests to prevent Ilegal Logging. By using sensors to pick up voices in the forests, we could monitor what happened in the forest in real-time.',
+      'Dive deep into the machine learning aspects of Jagawana, a system designed to prevent illegal logging. Learn how we utilize audio signal processing and sound classification to monitor forest activities.',
     slug: 'jagawana-machine-learning',
     thumbnail: jagawanaThumbnail,
     content: JagawanaML,
     keyword:
-      'jagawana, bangkit 2021, top 15 project, google bangkit, google, chainsaw detection, cnn model, machine learning, sound classification, tensorflow, audio signal processing',
+      'jagawana, bangkit 2021, machine learning, sound classification, tensorflow, audio signal processing, illegal logging prevention, forest conservation, CNN model, sensor networks, real-time monitoring, google bangkit, google',
   },
   {
     date: '05 June 2021',
     title: 'Jagawana — Internet of Things in Depth',
     description:
-      'Jagawana is a Wide Sensor Network System deployed in the forests to prevent Ilegal Logging. By using sensors to pick up voices in the forests, we could monitor what happened in the forest in real-time.',
+      'Discover the IoT components of Jagawana. Understand how our wide sensor network operates in real-time to capture and process sounds from the forest, aiding in the fight against illegal logging.',
     slug: 'jagawana-iot',
     content: JagawanaIoT,
     keyword:
-      'jagawana, bangkit 2021, top 15 project, google bangkit, google, chainsaw detection, cnn model, machine learning, sound classification, tensorflow, audio signal processing',
+      'jagawana, bangkit 2021, internet of things, IoT, sensor networks, real-time monitoring, forest conservation, illegal logging prevention, sound processing, google bangkit, google',
   },
   {
     date: '16 May 2021',
-    title: 'Detecting Chainsaws in Forest with Machine Learning — Jagawana',
+    title: 'Jagawana - Detecting Chainsaws in Forest with Machine Learning',
     description:
-      'Jagawana is a Wide Sensor Network System deployed in the forests to prevent Ilegal Logging. By using sensors to pick up voices in the forests, we could monitor what happened in the forest in real-time.',
+      'How Jagawana uses machine learning to detect chainsaw noises in forests. This innovative approach contributes to the ongoing efforts to curb illegal logging activities.',
     slug: 'jagawana-overview',
     content: JagawanaOverview,
     keyword:
-      'jagawana, bangkit 2021, top 15 project, google bangkit, google, chainsaw detection, cnn model, machine learning, sound classification, tensorflow, audio signal processing',
+      'jagawana, bangkit 2021, chainsaw detection, machine learning, sound classification, tensorflow, audio signal processing, forest conservation, illegal logging prevention, CNN model, sensor networks, real-time monitoring, google bangkit, google',
   },
   {
     date: '04 March 2021',

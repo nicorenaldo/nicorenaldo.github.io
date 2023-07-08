@@ -1,12 +1,8 @@
 import { StaticImageData } from 'next/image';
-import AyoLomba from './ayolomba';
 import Dovi from './dovi';
-import Itin from './itin';
 import Jagawana from './jagawana';
 
-import ayolombaThumbnail from '@/public/images/project/ayolomba-thumbnail.webp';
 import doviThumbnail from '@/public/images/project/dovi-thumbnail.webp';
-import itinThumbnail from '@/public/images/project/itin-thumbnail.webp';
 import jagawanaThumbnail from '@/public/images/project/jagawana-thumbnail.webp';
 
 export type Project = {
@@ -42,7 +38,7 @@ export const projects: Project[] = [
     tags: ['Flutter', 'Firebase'],
     content: Dovi,
     keyword:
-      'flutter, firebase, dovi, flashcard, spaced repetition, language learning app',
+      'Dovi, language learning, mobile learning, spaced repetition, flashcard app, flutter development, firebase, educational app, user learning efficiency, language retention',
   },
   {
     name: 'Jagawana',
@@ -54,30 +50,30 @@ export const projects: Project[] = [
     tags: ['Audio Signal Processing', 'Tensorflow', 'IoT', 'Google Cloud'],
     content: Jagawana,
     keyword:
-      'jagawana, bangkit 2021, top 15 project, google bangkit, google, chainsaw detection, cnn model, machine learning, sound classification, tensorflow, audio signal processing',
+      'Jagawana, audio signal processing, chainsaw detection, IoT in environmental preservation, machine learning, tensorflow, google cloud, forest preservation, environmental technology, sound classification, bangkit 2021',
   },
-  {
-    name: 'Itin',
-    date: '11 June 2021',
-    description:
-      'A trip planning web application to easily make, share, and browse itineraries',
-    thumbnail: itinThumbnail,
-    slug: 'itin',
-    tags: ['Django'],
-    video: 'https://www.youtube.com/embed/QpfyA9de6zk',
-    content: Itin,
-    keyword:
-      'itin, trip planning, web app, django, itinerary, technoscape binus, bncc',
-  },
-  {
-    name: 'AyoLomba!',
-    date: '11 June 2021',
-    description:
-      'A centralized web platform to manage competition registration and advertising',
-    thumbnail: ayolombaThumbnail,
-    slug: 'ayolomba',
-    tags: ['Django'],
-    content: AyoLomba,
-    keyword: 'ayolomba, web app, django',
-  },
+  // {
+  //   name: 'Itin',
+  //   date: '11 June 2021',
+  //   description:
+  //     'A trip planning web application to easily make, share, and browse itineraries',
+  //   thumbnail: itinThumbnail,
+  //   slug: 'itin',
+  //   tags: ['Django'],
+  //   video: 'https://www.youtube.com/embed/QpfyA9de6zk',
+  //   content: Itin,
+  //   keyword:
+  //     'itin, trip planning, web app, django, itinerary, technoscape binus, bncc',
+  // },
+  // {
+  //   name: 'AyoLomba!',
+  //   date: '11 June 2021',
+  //   description:
+  //     'A centralized web platform to manage competition registration and advertising',
+  //   thumbnail: ayolombaThumbnail,
+  //   slug: 'ayolomba',
+  //   tags: ['Django'],
+  //   content: AyoLomba,
+  //   keyword: 'ayolomba, web app, django',
+  // },
 ];

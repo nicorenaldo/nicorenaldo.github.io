@@ -29,6 +29,12 @@ export async function generateMetadata(
     title: `${project.name} | Nico Renaldo`,
     description: project.description,
     keywords: `${project.keyword}, ${DefaultKeyword}`,
+    openGraph: {
+      title: `${project.name} | Nico Renaldo Project`,
+      description: project.description,
+      tags: `${project.keyword}, ${DefaultKeyword}`,
+      authors: 'Nico Renaldo',
+    },
   };
 }
 

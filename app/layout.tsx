@@ -3,26 +3,29 @@ import Navbar from '@/components/Navigation/Navbar';
 import Sidebar from '@/components/Navigation/Sidebar';
 import { DefaultKeyword } from '@/data/keyword';
 import CustomProvider from '@/redux/provider';
-import { setupStore } from '@/redux/store';
+import { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata = {
-  title: 'Nico Renaldo',
+export const metadata: Metadata = {
+  title: 'Nico Renaldo | Software Engineer',
   description:
-    'Welcome to the personal website of Nico Renaldo, showcasing my portfolio and expertise in software and engineering.',
+    'Welcome to the personal website of Nico Renaldo. An experienced software engineer with a diverse background in Linux, Golang, Python, Operations, web development, machine learning, and embedded programming. Discover my portfolio and how I work towards building and maintaining robust systems.',
   keywords: DefaultKeyword,
+  viewport: 'width=device-width, initial-scale=1',
+  authors: { name: 'Nico Renaldo' },
+  creator: 'Nico Renaldo',
+  openGraph: {
+    title: 'Nico Renaldo | Software Engineer',
+    description:
+      'Nico Renaldo, an experienced software engineer with a diverse background in Linux, Golang, Python, Operations, web development, machine learning, and embedded programming. Explore his portfolio and learn how he builds and maintains robust systems.',
+    url: 'https://www.linkedin.com/in/nicorenaldo',
+  },
 };
 
-const store = setupStore();
-
 function RootLayout({ children }: { children: React.ReactNode }) {
-  const handleUp = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   return (
     <html lang='en'>
       <body className={inter.className}>
@@ -39,15 +42,6 @@ function RootLayout({ children }: { children: React.ReactNode }) {
               {children}
               <Footer />
             </div>
-
-            {/* <FloatingButton>
-            <button
-              onClick={handleUp}
-              className='btn btn-circle btn-primary transition-all shadow-xl hover:shadow-2xl p-4'
-            >
-              <ArrowUpIcon className='text-white outline-white' />
-            </button>
-          </FloatingButton> */}
 
             <Sidebar />
           </div>

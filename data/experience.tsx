@@ -54,26 +54,26 @@ export const ExperienceData: Experience[] = [
       'Acquired and preprocessed data from YouTube videos for machine learning models, utilizing web scraping and data cleaning techniques.',
     ],
   },
-  {
-    name: 'Widya Imersif Teknologi',
-    jobTitle: 'Hardware Engineer Intern',
-    location: 'Yogyakarta, Indonesia',
-    duration: 'Jan - Mar 2021',
-    link: 'https://www.linkedin.com/company/widyaimersif',
-    description: [
-      'Established a secure Raspberry Pi VPN connection for a medical station, ensuring reliable and secure data transfer.',
-      'Successfully integrated medical sensors with Raspberry Pi through Bluetooth communication.',
-    ],
-  },
-  {
-    name: 'Gadjah Mada Aerospace Team',
-    jobTitle: 'Electrical Engineer',
-    location: 'Yogyakarta, Indonesia',
-    duration: '2018 - 2021',
-    link: 'https://www.linkedin.com/company/gadjah-mada-aerospace-team',
-    description: [
-      'Participated in a multidisciplinary team to construct a rocket payload for atmospheric data collection, securing 2nd place for Indonesia at the AAS International CanSat Competition.',
-      'Designed the electronic system for small satellites and a ground control system, enabling real-time data acquisition.',
-    ],
-  },
+  // {
+  //   name: 'Widya Imersif Teknologi',
+  //   jobTitle: 'Hardware Engineer Intern',
+  //   location: 'Yogyakarta, Indonesia',
+  //   duration: 'Jan - Mar 2021',
+  //   link: 'https://www.linkedin.com/company/widyaimersif',
+  //   description: [
+  //     'Established a secure Raspberry Pi VPN connection for a medical station, ensuring reliable and secure data transfer.',
+  //     'Successfully integrated medical sensors with Raspberry Pi through Bluetooth communication.',
+  //   ],
+  // },
+  // {
+  //   name: 'Gadjah Mada Aerospace Team',
+  //   jobTitle: 'Electrical Engineer',
+  //   location: 'Yogyakarta, Indonesia',
+  //   duration: '2018 - 2021',
+  //   link: 'https://www.linkedin.com/company/gadjah-mada-aerospace-team',
+  //   description: [
+  //     'Participated in a multidisciplinary team to construct a rocket payload for atmospheric data collection, securing 2nd place for Indonesia at the AAS International CanSat Competition.',
+  //     'Designed the electronic system for small satellites and a ground control system, enabling real-time data acquisition.',
+  //   ],
+  // },
 ];
