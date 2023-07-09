@@ -21,15 +21,16 @@ export const SubHeading = tw.h3<any>`
 export const Title = tw.h4<any>`
     my-0
     font-bold
+    opacity-90
     lg:text-lg
     text-base
 `;
 
 export const Body = tw.p<any>`
     my-0
-    font-light
     lg:text-base
     text-sm
+    font-normal
 `;
 
 export const Caption = tw.p<any>`

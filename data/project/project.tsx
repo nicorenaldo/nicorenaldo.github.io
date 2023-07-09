@@ -32,7 +32,7 @@ export const projects: Project[] = [
     name: 'Dovi',
     date: '27 November 2022',
     description:
-      'A mobile language learning app built with Flutter and Firebase that employs spaced repetition algorithm to improve user learning rate.',
+      "Dovi is a language learning app built with Flutter and Firebase, employing a spaced repetition algorithm to enhance user's language acquisition efficiency.",
     thumbnail: doviThumbnail,
     slug: 'dovi',
     tags: ['Flutter', 'Firebase'],
@@ -44,7 +44,7 @@ export const projects: Project[] = [
     name: 'Jagawana',
     date: '11 June 2021',
     description:
-      'Research on chainsaw detection using IoT device and machine learning',
+      'Jagawana is an advanced system utilizing IoT and Machine Learning to detect chainsaw sounds from audio record, aiming to prevent illegal logging.',
     thumbnail: jagawanaThumbnail,
     slug: 'jagawana',
     tags: ['Audio Signal Processing', 'Tensorflow', 'IoT', 'Google Cloud'],

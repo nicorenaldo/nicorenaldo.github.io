@@ -24,7 +24,7 @@ const ExperienceCard = ({ experience: e }: ExperienceCardProps) => {
       <div className='flex flex-col mb-2 md:mb-0 md:flex-row justify-between'>
         <a href={e.link} target='_blank' aria-label={e.name}>
           <Title>
-            {e.name}, <span className='font-light'>{e.jobTitle}</span>
+            {e.name}, <span className='font-normal'>{e.jobTitle}</span>
           </Title>
         </a>
         <Body className='text-sm'>{e.duration}</Body>
@@ -34,7 +34,7 @@ const ExperienceCard = ({ experience: e }: ExperienceCardProps) => {
       </div>
       <ul className='flex flex-col mt-1 list-disc md:ml-4'>
         {e.description.map((desc) => (
-          <li key={desc} className='font-light'>
+          <li key={desc} className='font-normal'>
             {desc}
           </li>
         ))}

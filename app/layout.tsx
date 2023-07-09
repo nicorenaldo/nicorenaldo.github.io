@@ -10,6 +10,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://nicorenaldo.dev'),
   title: 'Nico Renaldo | Software Engineer',
   description:
     'Welcome to the personal website of Nico Renaldo. An experienced software engineer with a diverse background in Linux, Golang, Python, Operations, web development, machine learning, and embedded programming. Discover my portfolio and how I work towards building and maintaining robust systems.',
