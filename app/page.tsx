@@ -1,4 +1,5 @@
 import AboutMe from '@/app/components/AboutMe';
+import AchievementSection from './components/Achievement';
 import Banner from './components/Banner';
 import BlogRedirect from './components/Blog';
 import ExperienceSection from './components/Experience';
@@ -11,6 +12,7 @@ export default function App() {
       <div className='flex flex-col gap-16 xl:gap-24 md:mr-16 xl:mr-32'>
         <AboutMe />
         <ExperienceSection />
+        <AchievementSection />
         <ProjectSection />
         <BlogRedirect />
       </div>

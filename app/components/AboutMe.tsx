@@ -6,20 +6,18 @@ const AboutMe = () => {
     <SectionLayout title='About Me'>
       <div className='flex flex-col gap-4'>
         <Body>
-          Hello, I'm Nico Renaldo, a software engineer with an extensive
-          background across various technology domains. Having a solid
-          foundation in full-stack development using Golang and React alongside
-          extensive DevOps experience, I am passionate about building and
-          maintaining robust systems that can withstand high demand and deliver
-          exceptional performance.
+          A proficient software engineer with a diverse background across
+          various technology domains. Expert in full-stack development using
+          Golang and React, with comprehensive DevOps experience, I specialize
+          in building and maintaining robust, high-demand systems.
         </Body>
 
         <Body>
-          Previously served as a Site Reliability Engineer at Sea Ltd. My
-          responsibilities included developing internal platforms to streamline
-          and automate manual operations, ensuring the seamless performance of
-          our services, and troubleshooting a variety of machine and network
-          issues.
+          Prior to my current role, I served as a Site Reliability Engineer at
+          Sea Ltd. My responsibilities included developing internal platforms
+          that greatly reduced manual work and adopted by the entire software
+          engineering team, and ensuring the seamless performance of our
+          services, and troubleshooting a variety of machine and network issues.
         </Body>
 
         <Body>
