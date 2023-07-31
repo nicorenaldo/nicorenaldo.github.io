@@ -32,7 +32,7 @@ export const projects: Project[] = [
     name: 'Dovi',
     date: '27 November 2022',
     description:
-      "Dovi is a language learning app built with Flutter and Firebase, employing a spaced repetition algorithm to enhance user's language acquisition efficiency.",
+      'Powerful, intelligent flash cards made specially for language learning',
     thumbnail: doviThumbnail,
     slug: 'dovi',
     tags: ['Flutter', 'Firebase'],

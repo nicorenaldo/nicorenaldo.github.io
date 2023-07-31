@@ -3,18 +3,22 @@ import { HorizontalDivider } from '@/components/Common/Divider';
 import Quote from '@/components/Common/Quote';
 import { Body, SubHeading } from '@/components/Common/Text';
 
+import doviFeature1 from '@/public/images/project/dovi-feature1.webp';
+import doviFeature2 from '@/public/images/project/dovi-feature2.webp';
 import doviThumbnail from '@/public/images/project/dovi-thumbnail.webp';
-import doviPreview from '@/public/images/project/dovi-preview.webp';
+import Link from 'next/link';
 
 const Dovi = (
   <>
-    <Quote>Spaced repetition language learning app</Quote>
+    <Quote>
+      Powerful, intelligent flash cards made specially for language learning
+    </Quote>
     <SubHeading>Project Brief</SubHeading>
     <Body>
-      Dovi is a spaced repetition application for learning new languages. It
-      provides language translation feature, card management, and practice
-      session. Using spaced repetition algorithm, the user could learn and
-      remember words more effectively.
+      Dovi is a flashcard app made specially for language learning. It utilizes
+      spaced repetition to increase learning efficiency, and helps user in
+      managing the words they remember through card management and auto
+      translation.
     </Body>
     <HorizontalDivider />
 
@@ -43,8 +47,14 @@ const Dovi = (
       application.
     </Body>
 
+    <SubHeading>Links</SubHeading>
+    <Link href='https://www.doviflashcard.com/'>Project's Website</Link>
+
     <SubHeading>Photos</SubHeading>
-    <Carousel cover={false} images={[doviThumbnail, doviPreview]} />
+    <Carousel
+      cover={false}
+      images={[doviThumbnail, doviFeature1, doviFeature2]}
+    />
   </>
 );
 
