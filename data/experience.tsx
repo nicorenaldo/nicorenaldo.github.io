@@ -15,9 +15,9 @@ export const ExperienceData: Experience[] = [
     duration: 'Aug 2022 - Present',
     link: 'https://www.linkedin.com/company/seagrp',
     description: [
-      'Performed root cause analysis on a microservices architecture with over 1,265 services, diagnosing and rectifying issues at the node, network, and application levels.',
-      'Engineered internal platforms that automated operations, widely adopted by the entire software engineering team, streamlining workflow and significantly reducing manual workload.',
-      'Implemented service capacity analysis before campaigns, successfully managing service availability for over 4 million concurrent users during peak traffic, thus ensuring a seamless user experience.',
+      'Conducted extensive root cause analysis on a microservices architecture with over 1,265 services, resolving issues at various levels and ensuring optimal system performance.',
+      'Developed and deployed internal platforms that automated operations, enhancing productivity and reducing manual tasks for the entire software engineering team.',
+      'Executed service capacity analysis prior to campaigns, effectively managing service availability for millions of concurrent users and delivering a seamless user experience.',
     ],
   },
   {
@@ -37,8 +37,8 @@ export const ExperienceData: Experience[] = [
     location: 'Jakarta, Indonesia',
     duration: 'Oct 2021 - June 2022',
     description: [
-      'Developed a robust REST API backend application using Django, enhancing the functionality of a mobile application.',
-      "Transformed the company's development processes by introducing continuous integration and deployment practices, leading to streamlined workflows and increased productivity.",
+      'Developed a scalable and efficient REST API backend application using Django, resulting in improved performance and enhanced user experience.',
+      'Implemented automated testing processes, resulting in reduced bug occurrences, and increased overall system stability.',
     ],
   },
   {
@@ -48,9 +48,9 @@ export const ExperienceData: Experience[] = [
     duration: 'July - Dec 2021',
     link: 'https://indonesia.googleblog.com/2021/09/tim-terbaik-bangkit-raih-pendanaan-dari.html',
     description: [
-      'Secured substantial funding from Google and the Ministry of Education, an honor bestowed to only 15 teams from over 3000 competitive participants',
-      'Led the construction and optimization of CNN models for detecting chainsaw sounds using real-world datasets using Mel Spectogram data, implementing hyperparameter tuning and regularization techniques.',
-      'Designed and implemented scripts to create a chainsaw sound database, leveraging public datasets and YouTube APIs. This automation process led to a time efficiency gain of 90% by streamlining data acquisition and preprocessing.',
+      'Led a team of engineers in securing substantial funding from Google and the Ministry of Education, an honor bestowed to only 15 teams from over 3000 competitive participants.',
+      'Constructed and optimized CNN models for detecting chainsaw sounds using real-world datasets, implementing hyperparameter tuning and regularization techniques.',
+      'Designed and implemented scripts to create a chainsaw sound database, leveraging public datasets and YouTube APIs, resulting in a time efficiency gain of 90% by streamlining data acquisition and preprocessing',
     ],
   },
   // {
